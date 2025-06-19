@@ -10,9 +10,11 @@ body{
 }
 
 .leftSide{
+    float: left;
     width: 60vw;
 }
 
 .rightSide{
+    float: left;
     width: 30vw;
 }
