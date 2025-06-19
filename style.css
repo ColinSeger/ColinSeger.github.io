@@ -1,6 +1,6 @@
 
 header{
-    color:blue;
+    color:black;
     background-color: blue;
 }
 
@@ -12,9 +12,13 @@ body{
 .leftSide{
     float: left;
     width: 60vw;
+    max-width: 60vw;
+    background-color: aqua;
 }
 
 .rightSide{
     float: left;
     width: 30vw;
+    max-width: 30vw;
+    background-color: brown;
 }
