@@ -13,12 +13,23 @@ body{
     float: left;
     width: 60vw;
     max-width: 60vw;
+
+    /* Corners */
+    border-radius: 8px;
+
     background-color: aqua;
 }
 
 .rightSide{
+    /* Formatting */
     float: left;
     width: 30vw;
     max-width: 30vw;
-    background-color: brown;
+    padding-left: 5vw;
+
+    /* Corners */
+    border-radius: 8px;
+    
+    /* Colors */
+    background-color: rgb(138, 161, 150);
 }
