@@ -8,3 +8,11 @@ body{
     color: black;
     background-color: beige;
 }
+
+.leftSide{
+    width: 60vw;
+}
+
+.rightSide{
+    width: 30vw;
+}
