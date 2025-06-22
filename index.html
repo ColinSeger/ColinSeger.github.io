@@ -26,7 +26,15 @@
     <!-- Right Side Body -->
     <div class="right_side">
         <div>
-            Test
+            <script>
+                fetch('ProjectTextFiles/testFile.txt')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('content').innerText = data;
+                })
+                .catch(console.error('Error loading file', error));
+                
+            </script>
         </div>
     </div>
 </body>
