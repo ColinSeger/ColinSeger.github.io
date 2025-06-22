@@ -30,7 +30,7 @@
                 fetch('ProjectsTextFiles/testFile.txt')
                 .then(response => response.text())
                 .then(data => {
-                    document.getElementById('content').innerText = data;
+                    document.getElementsByClassName('right_side').innerText = data;
                 })
                 .catch(error => console.error('Error loading file', error));
                 
