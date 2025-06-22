@@ -25,12 +25,12 @@
     
     <!-- Right Side Body -->
     <div class="right_side">
-        <div>
+        <div id="test">
             <script>
                 fetch('ProjectsTextFiles/testFile.txt')
                 .then(response => response.text())
                 .then(data => {
-                    document.getElementsByClassName('right_side').innerText = data;
+                    document.getElementById('test').innerText = data;
                 })
                 .catch(error => console.error('Error loading file', error));
                 
