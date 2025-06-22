@@ -28,7 +28,7 @@ body{
     float: left;
     width: 30vw;
     max-width: 30vw;
-    margin: 2vw;
+    margin-left: 2vw;
 
     /* Internal */
     padding: 1vh;
