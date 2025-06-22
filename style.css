@@ -1,15 +1,19 @@
 
 header{
+    border-radius: 8px;
+
     color:black;
-    background-color: blue;
+    background-color: rgb(138, 161, 150);
 }
 
 body{
+    padding: 2vw;
+
     color: black;
-    background-color: beige;
+    background-color: rgb(60, 60, 60);
 }
 
-.leftSide{
+.left_side{
     float: left;
     width: 60vw;
     max-width: 60vw;
@@ -20,10 +24,11 @@ body{
     /* Corners */
     border-radius: 8px;
 
-    background-color: aqua;
+    color: black;
+    background-color: rgb(138, 161, 150);
 }
 
-.rightSide{
+.right_side{
     /* Formatting */
     float: left;
     width: 30vw;
@@ -37,5 +42,27 @@ body{
     border-radius: 8px;
     
     /* Colors */
+    color: black;
     background-color: rgb(138, 161, 150);
+}
+
+.pictures{
+    /* Formatting */
+    float: left;
+    width: 60%;
+    max-width: 60%;
+
+    /* Internal */
+
+    /* Corners */
+    border-radius: 8px;
+    
+    /* Colors */
+    color: black;
+    background-color: rgb(87, 229, 160);
+}
+
+.picture_description{
+    float: left;
+    max-width: 30%;
 }
