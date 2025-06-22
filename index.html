@@ -32,7 +32,7 @@
                 .then(data => {
                     document.getElementById('content').innerText = data;
                 })
-                .catch(console.error('Error loading file', error));
+                .catch(error => console.error('Error loading file', error));
                 
             </script>
         </div>
