@@ -31,6 +31,7 @@ footer{
 }
 
 .left_side{
+    display: flex;
     box-sizing:border-box;
     float: left;
     /* width: 60%; */
@@ -50,6 +51,7 @@ footer{
 
 .right_side{
     /* Formatting */
+    display: flex;
     box-sizing:border-box;
     float: left;
     width: calc(40% - 2vw);
