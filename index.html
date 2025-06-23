@@ -10,28 +10,30 @@
     <header>
         <h1>Colin Segerljung Portfolio</h1>
     </header>
-
-    <!-- Left Side Body -->
-    <div class="left_side">
-        <h2>Colin Segerljung (Temp)</h2>
-        <img src="Images/SelfImageTemp.jpg" class="pictures">
-        <div class="picture_description_right">
-            this is a description
-        </div>      
-    </div>
-    
-    <!-- Right Side Body -->
-    <div class="right_side">
-        <div id="test">
-            <script>
-                fetch('ProjectsTextFiles/testFile.txt')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('test').innerText = data;
-                })
-                .catch(error => console.error('Error loading file', error));
-                
-            </script>
+    <!-- Centre Container -->
+    <div>
+        <!-- Left Side Body -->
+        <div class="left_side">
+            <h2>Colin Segerljung (Temp)</h2>
+            <img src="Images/SelfImageTemp.jpg" class="pictures">
+            <div class="picture_description_right">
+                this is a description
+            </div>      
+        </div>
+        
+        <!-- Right Side Body -->
+        <div class="right_side">
+            <div id="test">
+                <script>
+                    fetch('ProjectsTextFiles/testFile.txt')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('test').innerText = data;
+                    })
+                    .catch(error => console.error('Error loading file', error));
+                    
+                </script>
+            </div>
         </div>
     </div>
 
