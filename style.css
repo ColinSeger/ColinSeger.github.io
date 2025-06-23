@@ -29,7 +29,7 @@ footer{
     float: left;
     width: 100%;
     max-width: 60vw;
-    margin-right: 0;
+    margin-right: 2vw;
 
     /* Internal */
     padding: 1vh;
@@ -45,8 +45,8 @@ footer{
     /* Formatting */
     float: left;
     width: 100%;
-    max-width: 30vw;
-    margin-left: 2vw;
+    /* max-width: 30vw; */
+    /* margin-left: 2vw; */
 
     /* Internal */
     padding: 1vh;
