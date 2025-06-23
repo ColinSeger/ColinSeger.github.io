@@ -1,12 +1,17 @@
 
 header{
-    border-radius: 8px;
+    padding: 1vw;
 
+    border-radius: 8px;
+    
+
+    /* Colors */
     color:black;
     background-color: rgb(138, 161, 150);
 }
 
 body{
+    min-height: 100dvh;
     padding: 2vw;
 
     color: black;
@@ -34,7 +39,7 @@ footer{
     margin-left: 0;
 
     /* Internal */
-    padding: 1vh;
+    padding: 1vw;
 
     /* Corners */
     border-radius: 8px;
@@ -53,7 +58,7 @@ footer{
     margin-right: 0;
 
     /* Internal */
-    padding: 1vh;
+    padding: 1vw;
 
     /* Corners */
     border-radius: 8px;
