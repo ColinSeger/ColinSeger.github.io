@@ -34,7 +34,9 @@ footer{
 
 #main_container{
     padding: 2dvw;
-    height: 60dvh;
+    padding-left: 0;
+    padding-right: 0;
+    height: 80dvh;
     width: 100%;
 }
 
