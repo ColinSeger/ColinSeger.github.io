@@ -62,7 +62,7 @@ footer{
 .pictures{
     /* Formatting */
     float: left;
-    width: 60%;
+    /* width: 60%; */
     max-width: 60%;
 
     /* Internal */
