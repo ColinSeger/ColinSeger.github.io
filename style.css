@@ -47,7 +47,7 @@ footer{
     /* Formatting */
     box-sizing:border-box;
     float: left;
-    width: 40%;
+    width: calc(40% - 2vw);
     max-width: 40%;
     /* margin-left: 2vw; */
     margin-right: 0;
