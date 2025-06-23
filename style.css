@@ -27,9 +27,10 @@ footer{
 
 .left_side{
     float: left;
-    width: 100%;
-    max-width: 60vw;
+    /* width: 60%; */
+    max-width: 60%;
     margin-right: 2vw;
+    margin-left: 0;
 
     /* Internal */
     padding: 1vh;
@@ -44,9 +45,10 @@ footer{
 .right_side{
     /* Formatting */
     float: left;
-    width: 100%;
-    /* max-width: 30vw; */
+    width: 40%;
+    max-width: 40%;
     /* margin-left: 2vw; */
+    margin-right: 0;
 
     /* Internal */
     padding: 1vh;
