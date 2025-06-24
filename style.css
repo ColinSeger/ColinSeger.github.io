@@ -91,7 +91,7 @@ footer{
     background-color: var(--container_color);
 }
 
-.pictures{
+.portfolio_picture{
     /* Formatting */
     float: left;
     height: auto;
@@ -126,12 +126,33 @@ footer{
     width: 100%;
     /* height: 60dvh; */
 
+    margin-bottom: 2dvh;
+
     border-radius: 8px;
 
     overflow: scroll;
 
     color: black;
     background-color: var(--container_color);
+}
+
+.project_picture{
+    /* Formatting */
+    float: left;
+    height: auto;
+    width: 30%;
+    max-width: 50%;
+    max-height: 40%;
+
+    /* Internal */
+    object-fit: scale-down;
+
+    /* Corners */
+    border-radius: 8px;
+    
+    /* Colors */
+    color: black;
+    background-color: var(--object_color);
 }
 
 .game_project_body{
