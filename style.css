@@ -1,7 +1,8 @@
 
 header{
-    width: 100%;
+    width: 98%;
     padding: 1vw;
+
 
     border-radius: 8px;
     
@@ -12,7 +13,7 @@ header{
 }
 
 body{
-    min-width: 100dvw;
+    min-width: auto;
     min-height: 100dvh;
     padding: 2vw;
 
@@ -44,7 +45,7 @@ footer{
     box-sizing:border-box;
     float: left;
     height: 100%;
-    /* width: 60%; */
+    width: 60%;
     max-width: 60%;
     max-height: 100%;
     margin-right: 2vw;
@@ -114,9 +115,11 @@ footer{
 
 .project_container{
     width: 100%;
-    height: 60dvh;
+    /* height: 60dvh; */
 
     border-radius: 8px;
+
+    overflow: scroll;
 
     color: black;
     background-color: cadetblue;
@@ -126,9 +129,10 @@ footer{
     /* Formatting */
     box-sizing:border-box;
     float: left;
-    width: 50%;
+    height: 80%;
+    width: 48%;
 
-    margin: 1dvw;
+    margin: 1%;
 
     /* Corners */
     border-radius: 8px;
