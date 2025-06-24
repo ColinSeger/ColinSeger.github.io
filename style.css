@@ -1,4 +1,13 @@
 
+:root{
+    --back_color: #797979; 
+    --container_color: #ddd;
+    --object_color: #d45a5a;
+     
+}
+
+
+
 header{
     width: 98%;
     padding: 1vw;
@@ -9,7 +18,7 @@ header{
 
     /* Colors */
     color:black;
-    background-color: rgb(138, 161, 150);
+    background-color: var(--container_color);
 }
 
 body{
@@ -18,7 +27,7 @@ body{
     padding: 2vw;
 
     color: black;
-    background-color: rgb(60, 60, 60);
+    background-color: var(--back_color);
 }
 
 footer{
@@ -30,7 +39,7 @@ footer{
     
     /* Colors */
     color: black;
-    background-color: rgb(87, 229, 160);
+    background-color: var(--container_color);
 }
 
 #main_container{
@@ -58,7 +67,7 @@ footer{
     border-radius: 8px;
 
     color: black;
-    background-color: rgb(138, 161, 150);
+    background-color: var(--container_color);
 }
 
 .right_side{
@@ -79,7 +88,7 @@ footer{
     
     /* Colors */
     color: black;
-    background-color: rgb(138, 161, 150);
+    background-color: var(--container_color);
 }
 
 .pictures{
@@ -98,7 +107,7 @@ footer{
     
     /* Colors */
     color: black;
-    background-color: rgb(87, 229, 160);
+    background-color: var(--object_color);
 }
 
 .picture_description_right{
@@ -122,7 +131,7 @@ footer{
     overflow: scroll;
 
     color: black;
-    background-color: cadetblue;
+    background-color: var(--container_color);
 }
 
 .game_project_body{
@@ -139,5 +148,5 @@ footer{
 
     /* Colors */
     color: black;
-    background-color: rgb(169, 240, 57);
+    background-color: var(--object_color);
 }
