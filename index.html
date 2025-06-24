@@ -49,11 +49,25 @@
     <div class="project_container">
         <!-- Project 1 -->
         <div class="game_project_body" id="grow_bot">
-            <h2>Game Project Template</h2>
+            <h2>Grow Bot</h2>
             <br/>
-            <img src="Images/SelfImageTemp.jpg" class="project_picture">
+            <img src="Images/GrowBotArt.jpg" class="project_picture">
 
-            <p>text</p>
+            <p id="grow_bot_text">grow bot text stand in</p>
+
+            <!-- Loading the text -->
+            <script>
+                    fetch('ProjectsTextFiles/GrowBot.txt')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('grow_bot_text').innerText = data;
+                    })
+                    .catch(error => console.error('Error loading file', error));
+                    
+            </script>
+
+
+            <a href="https://futuregames.itch.io/growbot">Check it out</a>
         </div>
 
         <!-- Project 2 -->
