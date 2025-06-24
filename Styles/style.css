@@ -13,12 +13,20 @@ header{
     padding: 1vw;
 
 
-    border-radius: 8px;
-    
+    border-radius: 8px, 0px, 0px, 8px;
+
+    margin-bottom: 0;
 
     /* Colors */
     color:black;
     background-color: var(--container_color);
+}
+
+nav{
+    margin-top: 0;
+    width: 98%;
+
+    background-color: var(--back_color);
 }
 
 body{
