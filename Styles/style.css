@@ -3,7 +3,7 @@
     --back_color: #797979; 
     --container_color: #ddd;
     --object_color: #d45a5a;
-     
+    --border_radius: 8px;
 }
 
 
@@ -13,7 +13,8 @@ header{
     padding: 1vw;
 
 
-    border-radius: 8px, 0px, 0px, 8px;
+    border-top-left-radius: var(--border_radius);
+    border-top-right-radius: var(--border_radius);
 
     margin-bottom: 0;
 
@@ -43,7 +44,7 @@ footer{
     width: 100%;
 
     /* Corners */
-    border-radius: 8px;
+    border-radius: var(--border_radius);
     
     /* Colors */
     color: black;
@@ -72,7 +73,7 @@ footer{
     padding: 1vw;
 
     /* Corners */
-    border-radius: 8px;
+    border-radius: var(--border_radius);
 
     color: black;
     background-color: var(--container_color);
@@ -92,7 +93,7 @@ footer{
     padding: 1vw;
 
     /* Corners */
-    border-radius: 8px;
+    border-radius: var(--border_radius);
     
     /* Colors */
     color: black;
@@ -111,7 +112,7 @@ footer{
     object-fit: scale-down;
 
     /* Corners */
-    border-radius: 8px;
+    border-radius: var(--border_radius);
     
     /* Colors */
     color: black;
@@ -126,7 +127,7 @@ footer{
     max-width: 40%;
 
     /* Corners */
-    border-radius: 8px;
+    border-radius: var(--border_radius);
 }
 
 
@@ -136,7 +137,7 @@ footer{
 
     margin-bottom: 2dvh;
 
-    border-radius: 8px;
+    border-radius: var(--border_radius);
 
     overflow: scroll;
 
@@ -156,7 +157,7 @@ footer{
     object-fit: scale-down;
 
     /* Corners */
-    border-radius: 8px;
+    border-radius: var(--border_radius);
     
     /* Colors */
     color: black;
@@ -173,7 +174,7 @@ footer{
     margin: 1%;
 
     /* Corners */
-    border-radius: 8px;
+    border-radius: var(--border_radius);
 
     /* Colors */
     color: black;
