@@ -23,15 +23,17 @@ header{
 
 nav{
     margin-top: 0;
+    height: 5dvh;
     width: 100%;
 
     background-color: var(--container_color);
 
     display: flex;
     align-items: center;
+    justify-content: center;
 
+    border-color: var(--back_color);
     border-top: 2px;
-    border: var(--back_color);
 
     border-bottom-left-radius: var(--border_radius);
     border-bottom-right-radius: var(--border_radius);
@@ -62,8 +64,14 @@ footer{
 .navigation_button{
     display: flex;
     align-self: center;
+    justify-content: center;
 
-    height: 1dvh;
+    width: 5dvw;
+    height: 4dvh;
+
+    background-color: var(--back_color);
+    border: var(--container_color);
+    border: 2px;
 }
 
 
