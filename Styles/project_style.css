@@ -1,4 +1,49 @@
-#grow_bot{
-    color: blueviolet;
-    background-color: yellow;
+.project_container{
+    width: 100%;
+    /* height: 60dvh; */
+
+    margin-bottom: 2dvh;
+
+    border-radius: var(--border_radius);
+
+    overflow: scroll;
+
+    color: black;
+    background-color: var(--container_color);
+}
+
+.project_picture{
+    /* Formatting */
+    float: left;
+    height: auto;
+    width: 30%;
+    max-width: 50%;
+    max-height: 40%;
+
+    /* Internal */
+    object-fit: scale-down;
+
+    /* Corners */
+    border-radius: var(--border_radius);
+    
+    /* Colors */
+    color: black;
+    background-color: var(--object_color);
+}
+
+.game_project_body{
+    /* Formatting */
+    box-sizing:border-box;
+    float: left;
+    height: 80%;
+    width: 48%;
+
+    margin: 1%;
+
+    /* Corners */
+    border-radius: var(--border_radius);
+
+    /* Colors */
+    color: black;
+    background-color: var(--object_color);
 }
