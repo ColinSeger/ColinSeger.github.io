@@ -29,6 +29,10 @@
     /* Colors */
     color: black;
     background-color: var(--object_color);
+
+    @media (min-width: 900px) {
+        width: 80%;
+    }
 }
 
 .game_project_body{
