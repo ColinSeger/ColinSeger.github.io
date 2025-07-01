@@ -12,8 +12,9 @@
     background-color: var(--container_color);
 
     @media (max-width: 900px) {
-        display: flex;
-        justify-content: center;
+        height: 100dvh;
+        /* display: flex; */
+        /* justify-content: center; */
         background-color: green;
     }
 }
@@ -58,8 +59,9 @@
     background-color: var(--object_color);
 
     @media (max-width: 900px) {
+        height: 25%;
         width: 100%;
-        display: flex;
+        /* display: flex; */
         background-color: blue;
     }
 }
