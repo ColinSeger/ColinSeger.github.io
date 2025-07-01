@@ -13,10 +13,13 @@
 
     @media (max-width: 900px) {
         display: flex;
-        align-self: center;
         justify-content: center;
         background-color: green;
     }
+}
+
+.project_header{
+    width: 100%;
 }
 
 .project_picture{
@@ -55,10 +58,8 @@
     background-color: var(--object_color);
 
     @media (max-width: 900px) {
-        width: 80%;
+        width: 100%;
         display: flex;
-        align-self: center;
-        justify-content: center;
         background-color: blue;
     }
 }

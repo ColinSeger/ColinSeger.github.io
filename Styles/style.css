@@ -101,6 +101,13 @@ footer{
 
     color: black;
     background-color: var(--container_color);
+
+    @media (max-width: 900px) {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        background-color: blue;
+    }
 }
 
 .right_side{
@@ -122,6 +129,15 @@ footer{
     /* Colors */
     color: black;
     background-color: var(--container_color);
+
+    @media (max-width: 900px) {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        background-color: blue;
+
+        height: 50%;
+    }
 }
 
 .portfolio_picture{
