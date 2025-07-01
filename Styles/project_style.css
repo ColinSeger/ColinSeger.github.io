@@ -11,10 +11,11 @@
     color: black;
     background-color: var(--container_color);
 
-    @media (min-width: 900px) {
+    @media (max-width: 900px) {
         display: flex;
         align-self: center;
         justify-content: center;
+        background-color: green;
     }
 }
 
@@ -53,10 +54,11 @@
     color: black;
     background-color: var(--object_color);
 
-    @media (min-width: 900px) {
+    @media (max-width: 900px) {
         width: 80%;
         display: flex;
         align-self: center;
         justify-content: center;
+        background-color: blue;
     }
 }
