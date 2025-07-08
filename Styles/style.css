@@ -1,8 +1,9 @@
 
 :root{
-    --back_color: #3B060A; 
-    --container_color: #8A0000;
-    --object_color: #C83F12;
+    --back_color: #000000; 
+    --container_color: #CFFFE2;
+    --object_color: #A2D5C6;
+    --another_color: #F6F6F6;
     --border_radius: 8px;
 }
 
@@ -19,6 +20,8 @@ header{
     /* Colors */
     color:black;
     background-color: var(--container_color);
+
+    box-shadow: #3B060A;
 }
 
 nav{
