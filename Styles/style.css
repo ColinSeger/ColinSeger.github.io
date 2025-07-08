@@ -11,9 +11,7 @@ header{
     width: 98%;
     padding: 1vw;
 
-
-    border-top-left-radius: var(--border_radius);
-    border-top-right-radius: var(--border_radius);
+    border-radius: var(--border_radius);
 
     margin-bottom: 0;
 

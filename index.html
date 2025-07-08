@@ -32,17 +32,9 @@
         
         <!-- Right Side Body -->
         <div class="right_side">
-            <div id="test">
-                <script>
-                    fetch('ProjectsTextFiles/testFile.txt')
-                    .then(response => response.text())
-                    .then(data => {
-                        document.getElementById('test').innerText = data;
-                    })
-                    .catch(error => console.error('Error loading file', error));
-                    
-                </script>
-            </div>
+            <nav>
+                
+            </nav>
         </div>
     </div>
 
@@ -72,12 +64,20 @@
         </div>
 
         <!-- Project 2 -->
-        <div class="game_project_body">
+        <div class="game_project_body" id="test">
             <h2 class="project_header">Game Project Template</h2>
             <br/>
             <img src="Images/darkdescent_poster02.png" class="project_picture">
 
-            <p>text</p>
+            <script>
+                fetch('ProjectsTextFiles/testFile.txt')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('test').innerText = data;
+                })
+                .catch(error => console.error('Error loading file', error));
+                
+            </script>
         </div>
     </div>
     
