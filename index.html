@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="Styles/style.css">
         <link rel="stylesheet" href="Styles/project_style.css">
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script src="Scripts/loadMarkdown.js"></script>
         <title>Colin Segerljung Portfolio</title>
     </head>
 <body>
@@ -24,17 +26,27 @@
         <!-- Left Side Body -->
         <div class="left_side">
             <h2>Colin Segerljung (Temp)</h2>
-            <img src="Images/SelfImageTemp.jpg" class="portfolio_picture">
-            <div class="picture_description_right">
-                this is a description
-            </div>      
+            <br/>
+            <div class="portfolio_picture"></div>
+            <br/>
+            <div class="picture_description_right", id="personal_descriptor">
+                <script>
+                    loadMarkdownFile('/ProjectsTextFiles/Description.md', "personal_descriptor");
+                </script>
+            </div>
         </div>
         
         <!-- Right Side Body -->
         <div class="right_side">
-            <nav>
+            <div class="right_side_containers">
+                Education
+            </div>
+            <div class="right_side_containers">
+                Projects
+            </div>
+            <div class="right_side_containers">
 
-            </nav>
+            </div>
         </div>
     </div>
 
@@ -42,43 +54,29 @@
     <div class="project_container">
         <!-- Project 1 -->
         <div class="game_project_body" id="grow_bot">
-            <h2 class="project_header">Grow Bot</h2>
+            <!-- <h2 class="project_header">Grow Bot</h2>
             <br/>
-            <img src="Images/GrowBotArt.jpg" class="project_picture">
+            <img src="Images/GrowBotArt.jpg" class="project_picture"> -->
             
             <p id="grow_bot_text">grow bot text stand in</p>
 
             <!-- Loading the text -->
             <script>
-                    fetch('ProjectsTextFiles/GrowBot.txt')
-                    .then(response => response.text())
-                    .then(data => {
-                        document.getElementById('grow_bot_text').innerText = data;
-                    })
-                    .catch(error => console.error('Error loading file', error));
-                    
+                loadMarkdownFile('/ProjectsTextFiles/GrowBot.md', "grow_bot_text");
             </script>
 
-
-            <a href="https://futuregames.itch.io/growbot">Check it out</a>
         </div>
 
         <!-- Project 2 -->
         <div class="game_project_body">
-            <h2 class="project_header">Game Project Template</h2>
+            <!-- <h2 class="project_header">Game Project Template</h2>
             <br/>
-            <img src="Images/darkdescent_poster02.png" class="project_picture">
+            <img src="Images/darkdescent_poster02.png" class="project_picture" id="grow_bot_image"> -->
 
             <p id="test">Dark Descent text standin</p>
 
             <script>
-                fetch('ProjectsTextFiles/testFile.txt')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('test').innerText = data;
-                })
-                .catch(error => console.error('Error loading file', error));
-                
+                loadMarkdownFile('/ProjectsTextFiles/DarkDescent.md', "test");
             </script>
         </div>
     </div>
