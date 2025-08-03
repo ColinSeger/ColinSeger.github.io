@@ -31,13 +31,15 @@
             <br/>
             <div class="picture_description_right", id="personal_descriptor">
                 <script>
-                    loadMarkdownFile('/ProjectsTextFiles/Description.md', "personal_descriptor");
+                    load_markdown_file('/ProjectsTextFiles/Description.md', "personal_descriptor");
+                    add_copy_element("phone_number");
                 </script>
             </div>
         </div>
         
         <!-- Right Side Body -->
         <div class="right_side">
+            <h2>Recent Activity</h2>
             <div class="right_side_containers">
                 Education
             </div>
@@ -62,7 +64,7 @@
 
             <!-- Loading the text -->
             <script>
-                loadMarkdownFile('/ProjectsTextFiles/GrowBot.md', "grow_bot_text");
+                load_markdown_file('/ProjectsTextFiles/GrowBot.md', "grow_bot_text");
             </script>
 
         </div>
@@ -76,7 +78,7 @@
             <p id="test">Dark Descent text standin</p>
 
             <script>
-                loadMarkdownFile('/ProjectsTextFiles/DarkDescent.md', "test");
+                load_markdown_file('/ProjectsTextFiles/DarkDescent.md', "test");
             </script>
         </div>
     </div>

@@ -10,28 +10,43 @@ class Content{
 let contents = [];
 
 // Function to load a markdown file
-function loadMarkdownFile(filePath, target) {
+function load_markdown_file(filePath, target) {
     contents.push(new Content(filePath, target));
-    // fetch(filePath)
-    //     .then(response => {
-    //         if (!response.ok) {
-    //             throw new Error('Network response was not ok');
-    //         }
-    //         return response.text();
-    //     })
-    //     .then(markdown => {
-    //         if (typeof marked === 'undefined') {
-    //             throw new Error('marked library is not loaded');
-    //         }
-    //         // Convert markdown to HTML
-    //         const html = marked.parse(markdown);
-    //         // Insert the HTML into the content div
-    //         document.getElementById(target).innerHTML = html;
-    //     })
-    //     .catch(error => {
-    //         console.error('There has been a problem with your fetch operation:', error);
-    //     });
-}
+};
+
+// function load_all_recent(){
+//     var fs = require('fs');
+//     var files = fs.readdirSync('/RecentProjects');
+    
+//     files.forEach(file => {
+//         fetch(file)
+//             .then(response => {
+//                 if (!response.ok) {
+//                     throw new Error('Network response was not ok');
+//                 }
+//                 return response.text();
+//             })
+//             .then(markdown => {
+//                 if (typeof marked === 'undefined') {
+//                     throw new Error('marked library is not loaded');
+//                 }
+//                 // Convert markdown to HTML
+//                 const html = marked.parse(markdown);
+
+//                 var placement = document.getElementById("right_side");
+
+//                 // create a new div element
+//                 const newDiv = document.createElement("div");
+
+//                 newDiv.appendChild(html);
+
+//                 document.body.insertBefore(newDiv, placement);
+//             })
+//             .catch(error => {
+//                 console.error('There has been a problem with your fetch operation:', error);
+//             });
+//     });
+// };
 
 // Ensure the DOM is fully loaded before executing the script
 document.addEventListener('DOMContentLoaded', (event) => {
@@ -57,4 +72,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 console.error('There has been a problem with your fetch operation:', error);
             });
     });
+    // load_all_recent();
 });

@@ -5,6 +5,11 @@
 <br>  
 
 
-Growbot was the first game project I was a part of at Futuregames.
+Dark Descent was the second game project I was a part of at Futuregames.
 
-It being the first game I was part of you might expect it to have been the worst project, but actually I personally found the 
+It was a fun project with plenty of learning, we used Fmod for the first time in this project and was quite the pain to get it working correctly on everyone's machines
+
+longer for no reason so I can test sizing
+
+<!-- [Check it out](https://futuregames.itch.io/growbot) -->
+<a href="https://futuregames.itch.io/growbot" class="redirect_button">Check it out</a>

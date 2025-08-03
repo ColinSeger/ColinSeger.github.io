@@ -1,21 +1,21 @@
 .project_container{
     width: 100%;
-    /* height: 60dvh; */
+    height: auto;
 
     margin-bottom: 2dvh;
+    margin-left: 0;
 
     border-radius: var(--border_radius);
 
-    overflow: scroll;
+    overflow: auto;
 
     color: black;
     background-color: var(--container_color);
 
-    @media (max-width: 900px) {
-        height: 100dvh;
-        /* display: flex; */
-        /* justify-content: center; */
-        background-color: green;
+    @media (orientation: portrait) {
+        margin-top: 0;
+        display: block;
+        overflow-x: hidden;
     }
 }
 
@@ -46,9 +46,11 @@
     /* Formatting */
     /* box-sizing:border-box; */
     float: left;
-    height: 80%;
-    width: 48%;
+    height: 40dvh;
+    width: calc(50% - 4%);
 
+
+    padding: 1%;
     margin: 1%;
 
     /* Corners */
@@ -58,13 +60,38 @@
     color: black;
     background-color: var(--object_color);
 
-    @media (max-width: 900px) {
-        height: 25%;
-        width: 100%;
-        /* display: flex; */
+    /* Scroll Settings */    
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-color: var(--container_color) var(--object_color);
+    scrollbar-width: thin;
+
+    @media (orientation: portrait) {
+        height: auto;
+        width: 98%;
+        box-sizing: border-box;
     }
 }
 
+.redirect_button{
+
+    /* width: 20px;
+    height: 100px; */
+    padding: 5px;
+    border-radius: var(--border_radius);
+
+    background-color: var(--container_color);
+
+    color: black;
+    text-decoration: none;
+}
+@media (hover: hover) {
+/* when hover is supported */
+    .redirect_button:hover {
+        color: var(--container_color);
+        background-color: var(--back_color);
+    }
+}
 #grow_bot_image{
     height: 300px;
     max-width: 100%;
