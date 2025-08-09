@@ -34,20 +34,32 @@
         <!-- Right Side Body -->
         <div class="right_side">
             <h2>Recent Activity</h2>
-            <div class="right_side_containers">
-                Education
+            <div class="right_side_containers" id="summer_project">
+                <script>
+                    load_markdown_file("RecentProjects/test.md", "summer_project");
+                </script>
             </div>
-            <div class="right_side_containers">
-                Projects
+            <div class="right_side_containers" id="in_bloom">
+                <script>
+                    load_markdown_file("RecentProjects/in_bloom.md", "in_bloom");
+                </script>
             </div>
-            <div class="right_side_containers">
-
+            <div class="right_side_containers" id="snake_game">
+                <script>
+                    load_markdown_file("RecentProjects/snake_game.md", "snake_game");
+                </script>
+            </div>
+            <div class="right_side_containers" id="dark">
+                <script>
+                    load_markdown_file("RecentProjects/dark_descent.md", "dark");
+                </script>
             </div>
         </div>
     </div>
 
     <!-- Project Container -->
     <div class="project_container">
+        <h2 style="margin-left: 1vw;">Highlighted projects</h2>
         <!-- Project 1 -->
         <div class="game_project_body" id="grow_bot">
             <!-- <h2 class="project_header">Grow Bot</h2>
