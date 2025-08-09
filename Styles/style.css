@@ -59,6 +59,8 @@ body{
     overflow-y: auto;
     scrollbar-color: var(--container_color) var(--object_color);
     scrollbar-width: thin;
+
+    font-family: sans-serif;
 }
 
 footer{
