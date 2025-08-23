@@ -96,12 +96,15 @@ footer{
     padding-left: 0;
     padding-right: 0;
     height: auto;
-    min-height: 80dvh;
+
+    contain: content;
+    /* min-height: 80dvh; */
+    margin-bottom: 1dvh;
     width: 100%;
     
     @media (orientation: portrait) {
         height: auto;
-        margin-bottom: -3dvh;
+        /* margin-bottom: -3dvh; */
     }
 }
 
@@ -264,4 +267,10 @@ footer{
     background-image: url('/Images/phone.svg');
     background-repeat: no-repeat;
     background-size: contain;
+}
+#itch_io{
+    background-image: url('/Images/itch-io-svgrepo-com.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 25px;
 }

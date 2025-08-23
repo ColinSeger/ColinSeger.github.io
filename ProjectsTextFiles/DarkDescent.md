@@ -11,4 +11,4 @@ It was a fun project with plenty of learning, we used Fmod for the first time in
 
 
 <!-- [Check it out](https://futuregames.itch.io/growbot) -->
-<a href="ProjectPages/DarkDescent.html" class="redirect_button">Check it out</a>
+<a href="ProjectPages/DarkDescent.html" class="redirect_button">Read More</a>
