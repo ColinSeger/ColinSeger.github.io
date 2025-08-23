@@ -156,6 +156,8 @@ footer{
     color: black;
     background-color: var(--container_color);
 
+    /* overflow-x: auto; */
+
     @media (orientation: portrait) {
         width: 100%;
         max-width: 100%;

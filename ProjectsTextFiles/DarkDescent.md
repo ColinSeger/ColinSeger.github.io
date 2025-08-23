@@ -9,7 +9,6 @@ Dark Descent was the second game project I was a part of at Futuregames.
 
 It was a fun project with plenty of learning, we used Fmod for the first time in this project and was quite the pain to get it working correctly on everyone's machines
 
-longer for no reason so I can test sizing
 
 <!-- [Check it out](https://futuregames.itch.io/growbot) -->
 <a href="https://futuregames.itch.io/growbot" class="redirect_button">Check it out</a>

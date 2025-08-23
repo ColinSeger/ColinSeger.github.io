@@ -11,4 +11,4 @@ Growbot was the first game project I was a part of at Futuregames.
 It being the first game I was part of you might expect it to have been the worst project, but actually I personally found the 
 
 <!-- [Check it out](https://futuregames.itch.io/growbot) -->
-<a href="https://futuregames.itch.io/growbot" class="redirect_button">Check it out</a>
+<a href="ProjectPages/GrowBot.html" class="redirect_button">Check it out</a>

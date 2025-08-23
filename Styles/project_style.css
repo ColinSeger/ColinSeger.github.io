@@ -109,3 +109,12 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+#in_bloom_image{
+    height: 300px;
+    max-width: 100%;
+    width: 100%;
+    background-image: url('/Images/InBloom.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
