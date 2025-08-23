@@ -46,7 +46,7 @@
     /* Formatting */
     /* box-sizing:border-box; */
     float: left;
-    height: 40dvh;
+    /* max-height: 45dvh; */
     width: calc(50% - 4%);
 
 
