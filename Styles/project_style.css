@@ -93,7 +93,7 @@
     }
 }
 #grow_bot_image{
-    height: 300px;
+    height: 200px;
     max-width: 100%;
     width: 100%;
     background-image: url('/Images/GrowBotArt.jpg');

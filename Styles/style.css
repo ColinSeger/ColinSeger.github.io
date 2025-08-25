@@ -92,7 +92,7 @@ footer{
 
 
 #main_container{
-    padding: 2dvw;
+    padding: 2dvh;
     padding-left: 0;
     padding-right: 0;
     height: auto;
@@ -235,6 +235,17 @@ footer{
         height: 50%;
         display: block;
     }
+}
+
+.back_button{
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    height: 20px;
+    /* padding-left: 25px; */
+    margin-top: 2dvh;
+    margin-bottom: 0px;
+    text-decoration: none;
 }
 
 .icons{
