@@ -4,8 +4,10 @@
         <meta charset="UTF-8" meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../Styles/style.css">
         <link rel="stylesheet" href="../Styles/project_style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/a11y-dark.css">
         <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-        <script src="Scripts/loadMarkdown.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+        <script src="../Scripts/loadMarkdown.js"></script>
         <title>Colin Segerljung Portfolio</title>
     </head>
 <body>
@@ -35,52 +37,12 @@
         </div>
         
         <!-- Right Side Body -->
-        <div class="right_side">
-            <h2>What is GrowBot</h2>
-            <p>
-                In grow bot you play as a abandoned toy
-            </p>
-            <h2>My Experience</h2>
-            <p>
-                I had loads of fun during this project
-
-                We suffered a causality at the beginning of this project in the sense of one programmer going missing.
-                
-                <br><br>
-                We ended up with two active programmers and me being one of them had to work real hard during this project,
-                the people I had to work with during this project had some great communication and where able to step up whenever we needed assistance.
-                <br><br>
-                
-                We had to cut a lot of our initial idea as it included upgrades and a ability to swap arms with that did different things,
-                we also had some vague ideas on some more visual destruction but that also got cut.
-
-                <br><br>
-
-                All in all this was probably the best game project I was part of mostly due to 
-                how fun I had developing this game.
-            </p>
-            <h3>My Takeaways</h3>
-            <ul>
-                <li>Communication is key</li>
-                <li>What can be accomplished in a short time with effort</li>
-                <li>That sacrifices on what can be done has to be done (When time is limited)</li>
-            </ul>
-
-            <pre>
-                <code class="language-C#">
-    [SerializeField]protected int health = 10, maxHealth = 10;
-    [SerializeField]protected Tier thisTier = Tier.Small;
-    [SerializeField]protected Rigidbody thisRigidbody;
-    public enum Tier{
-        Small,
-        Medium,
-        Large
-    }
-                </code>
-            </pre>
+        <div class="right_side" id="right_side">
+            <script>
+                load_markdown_file("GrowBot/GrowBot.md" , "right_side");                
+            </script>
         </div>
     </div>
-
     <footer>
         <h3>Thanks for checking my Portfolio</h3>
         <h3>Colin Segerljung</h3>

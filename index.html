@@ -4,6 +4,7 @@
         <meta charset="UTF-8" meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="Styles/style.css">
         <link rel="stylesheet" href="Styles/project_style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
         <script src="Scripts/loadMarkdown.js"></script>
         <title>Colin Segerljung Portfolio</title>
@@ -26,6 +27,7 @@
             <div class="picture_description_right", id="personal_descriptor">
                 <script>
                     load_markdown_file('/ProjectsTextFiles/Description.md', "personal_descriptor");
+                    // load_html_file('/ProjectPages/test.html', "personal_descriptor");
                     // add_copy_element("phone_number");
                 </script>
             </div>

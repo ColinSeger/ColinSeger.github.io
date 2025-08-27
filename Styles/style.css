@@ -22,7 +22,7 @@ header{
     margin-bottom: 0;
 
     /* Colors */
-    color:black;
+    /* color:black; */
     background-color: var(--container_color);
 
     box-shadow: #3B060A;
@@ -51,7 +51,7 @@ body{
     min-height: 100dvh;
     padding: 2vw;
 
-    color: black;
+    /* color: black; */
     background-color: var(--back_color);
 
     /* Scroll Settings */    
@@ -72,7 +72,7 @@ footer{
     border-radius: var(--border_radius);
     
     /* Colors */
-    color: black;
+    /* color: black; */
     background-color: var(--container_color);
 }
 
@@ -124,7 +124,7 @@ footer{
     /* Corners */
     border-radius: var(--border_radius);
 
-    color: black;
+    /* color: black; */
     background-color: var(--container_color);
 
     box-shadow: 5px;
@@ -156,7 +156,7 @@ footer{
     border-radius: var(--border_radius);
     
     /* Colors */
-    color: black;
+    /* color: black; */
     background-color: var(--container_color);
 
     /* overflow-x: auto; */
@@ -205,7 +205,7 @@ footer{
     border-radius: var(--border_radius);
     
     /* Colors */
-    color: black;
+    /* color: black; */
     /* background-color: var(--object_color); */
     background-image: url('/Images/SelfImageTemp.jpg');
     background-repeat: no-repeat;
