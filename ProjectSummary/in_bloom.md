@@ -1,6 +1,4 @@
-<!-- ### In Bloom  -->
-
-In Bloom was the first proper UE5 game I was a part of making.
+In Bloom was the first proper **UE5** game I was a part of making.
 
 The end result looks good but in my opinion has a lot of shortcomings.
 

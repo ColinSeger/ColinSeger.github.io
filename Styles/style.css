@@ -86,6 +86,9 @@ footer{
     background-color: var(--container_color);
 }
 
+a{
+    text-decoration: none;
+}
 
 .navigation_button{
     display: flex;
@@ -268,6 +271,7 @@ footer{
     margin-top: 2dvh;
     margin-bottom: 0px;
     text-decoration: none;
+    
 }
 
 .icons{
