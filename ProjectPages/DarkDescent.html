@@ -4,8 +4,10 @@
         <meta charset="UTF-8" meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../Styles/style.css">
         <link rel="stylesheet" href="../Styles/project_style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/a11y-dark.css">
         <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-        <script src="Scripts/loadMarkdown.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+        <script src="../Scripts/loadMarkdown.js"></script>
         <title>Colin Segerljung Portfolio</title>
     </head>
 <body>
@@ -36,41 +38,10 @@
         </div>
         
         <!-- Right Side Body -->
-        <div class="right_side">
-            <h2>What is Dark Descent</h2>
-            <p>
-                In Dark Descent you play as a templar stuck in limbo. With magic
-            </p>
-            <h2>My Experience</h2>
-            <p>
-                I enjoyed working on this project even though I did not enjoy the concept.
-
-                <br><br>
-                
-                My job was to make the AI, at least at first that was my assigned task,
-                <br><br>
-                We had some issues with the magic system in the beginning and due to the one in charge of magic
-                being both hard to reach and having some issues understanding the requests made by designers 
-                the decision was made for me to overlook the implementation of the magic system.
-
-                When I got time to take a look at the spells system I made sure that the designers had their 
-                requirements set in stone and started work on a minor scalability issue I could see with the spell system
-
-                <br><br>
-                
-                
-
-                <br><br>
-
-                
-                
-            </p>
-            <h3>My Takeaways</h3>
-            <ul>
-                <li>Reinforced that communication is key</li>
-                <li>Fmod is a pain if not setup properly</li>
-                <li>Talking outside your discipline is critical</li>
-            </ul>
+        <div class="right_side" id="right_side">
+            <script>
+                load_markdown_file("DarkDescent/DarkDescent.md" , "right_side"); 
+            </script>
         </div>
     </div>
 

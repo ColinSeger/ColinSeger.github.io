@@ -70,7 +70,7 @@ public virtual void Death(AnimationCurve curve, Tier tier)
 
 ```
 
-### Structure Damage
+#### Structure Damage
 
 Here is some of the code of how "Damageable" is used on objects.
 
@@ -164,7 +164,7 @@ IEnumerator DeathAnimation()
 
 ```
 
-### Peak Code
+#### Peak Code
 
 Here is some of the worst code I probably have ever written but it works surprisingly well
 
