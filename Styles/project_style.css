@@ -96,7 +96,7 @@
     height: 200px;
     max-width: 100%;
     width: 100%;
-    background-image: url('/Images/GrowBotArt.jpg');
+    background-image: url('/Images/OptimizedPosters/grow_bot_poster.webp');
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -105,7 +105,7 @@
     height: 300px;
     max-width: 100%;
     width: 100%;
-    background-image: url('/Images/darkdescent_poster02.png');
+    background-image: url('/Images/OptimizedPosters/dark_descent_poster.webp');
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -114,7 +114,7 @@
     height: 300px;
     max-width: 100%;
     width: 100%;
-    background-image: url('/Images/InBloom.jpg');
+    background-image: url('/Images/OptimizedPosters/in_bloom.webp');
     background-repeat: no-repeat;
     background-size: contain;
 }
