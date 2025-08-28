@@ -26,9 +26,7 @@
             <br/>
             <div class="picture_description_right", id="personal_descriptor">
                 <script>
-                    load_markdown_file('/ProjectsTextFiles/Description.md', "personal_descriptor");
-                    // load_html_file('/ProjectPages/test.html', "personal_descriptor");
-                    // add_copy_element("phone_number");
+                    load_markdown_file('/Description/description.md', "personal_descriptor");
                 </script>
             </div>
         </div>
@@ -36,24 +34,40 @@
         <!-- Right Side Body -->
         <div class="right_side">
             <h2>Recent Activity</h2>
-            <div class="right_side_containers" id="summer_project">
+            <div class="right_side_containers">
+                <h3>Yen Jai</h3>
+                <div id="summer_project">
+                    If you see this it failed to load project file.
+                </div>
                 <script>
-                    load_markdown_file("RecentProjects/test.md", "summer_project");
+                    load_markdown_file("ProjectSummary/yen_jai.md", "summer_project");
                 </script>
             </div>
-            <div class="right_side_containers" id="in_bloom">
+            <div class="right_side_containers">
+                <h3>In Bloom</h3>
+                <div  id="in_bloom">
+                    If you see this it failed to load project file.
+                </div>
                 <script>
-                    load_markdown_file("RecentProjects/in_bloom.md", "in_bloom");
+                    load_markdown_file("ProjectSummary/in_bloom.md", "in_bloom");
                 </script>
             </div>
-            <div class="right_side_containers" id="snake_game">
+            <div class="right_side_containers">
+                <h3>Snake Game</h3>
+                <div id="snake_game">
+                    If you see this it failed to load project file.
+                </div>
                 <script>
-                    load_markdown_file("RecentProjects/snake_game.md", "snake_game");
+                    load_markdown_file("ProjectSummary/snake_game.md", "snake_game");
                 </script>
             </div>
-            <div class="right_side_containers" id="dark">
+            <div class="right_side_containers">
+                <h3>Dark Descent</h3>
+                <div id="dark">
+                    If you see this it failed to load project file.
+                </div>
                 <script>
-                    load_markdown_file("RecentProjects/dark_descent.md", "dark");
+                    load_markdown_file("ProjectSummary/dark_descent.md", "dark");
                 </script>
             </div>
         </div>
@@ -64,34 +78,47 @@
         <h2 style="margin-left: 1vw;">Highlighted projects</h2>
         <!-- Project 1 -->
         <div class="game_project_body" id="grow_bot">
-            <!-- <h2 class="project_header">Grow Bot</h2>
-            <br/>
-            <img src="Images/GrowBotArt.jpg" class="project_picture"> -->
-            
-            <p id="grow_bot_text">If you see this it failed to load text</p>
+            <h2 class="project_header">Grow Bot</h2>
+            <div class="project_picture" id="grow_bot_image"></div>
+            <br>
+
+            <div id="grow_bot_text">
+                If you see this it failed to load text.
+            </div>
 
             <!-- Loading the text -->
             <script>
-                load_markdown_file('/ProjectsTextFiles/GrowBot.md', "grow_bot_text");
+                load_markdown_file('/ProjectSummary/grow_bot.md', "grow_bot_text");
             </script>
-
+            <a href="ProjectPages/GrowBot.html" class="redirect_button">Read More</a>
         </div>
 
         <!-- Project 2 -->
         <div class="game_project_body">
-            <p id="test">If you see this it failed to load text</p>
+            <h2 class="project_header">Dark Descent</h2>
+            <div class="project_picture" id="dark_descent_image"></div>
+            <br>  
+            <div id="dark_descent">
+                If you see this it failed to load text.
+            </div>
 
             <script>
-                load_markdown_file('/ProjectsTextFiles/DarkDescent.md', "test");
+                load_markdown_file('/ProjectSummary/dark_descent.md', "dark_descent");
             </script>
+            <a href="ProjectPages/DarkDescent.html" class="redirect_button">Read More</a>
         </div>
 
         <div class="game_project_body">
-            <p id="in_bloom_text">If you see this it failed to load text</p>
-
+            <h2 class="project_header">In Bloom</h2>
+            <div class="project_picture" id="in_bloom_image"></div>
+            <br>  
+            <div id="in_bloom_text">
+                If you see this it failed to load text.
+            </div>
             <script>
-                load_markdown_file('/ProjectsTextFiles/InBloom.md', "in_bloom_text");
+                load_markdown_file('/ProjectSummary/in_bloom.md', "in_bloom_text");
             </script>
+            <a href="ProjectPages/InBloom.html" class="redirect_button">Read More</a>
         </div>
     </div>
     

@@ -270,23 +270,23 @@ footer{
 } */
 
 #linkedin{
-    background-image: url('/Images/linkedin-svgrepo-com.svg');
+    background-image: url('/Images/Icons/linkedin-svgrepo-com.svg');
     background-repeat: no-repeat;
     background-size: contain;
 }
 #phone_icon{
-    background-image: url('/Images/phone.svg');
+    background-image: url('/Images/Icons//phone.svg');
     background-repeat: no-repeat;
     background-size: contain;
 }
 #itch_io{
-    background-image: url('/Images/itch-io-svgrepo-com.svg');
+    background-image: url('/Images/Icons//itch-io-svgrepo-com.svg');
     background-repeat: no-repeat;
     background-size: contain;
     height: 25px;
 }
 #git_hub{
-    background-image: url('/Images/github-mark.svg');
+    background-image: url('/Images/Icons//github-mark.svg');
     background-repeat: no-repeat;
     background-size: contain;
     height: 25px;

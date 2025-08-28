@@ -1,6 +1,3 @@
-
-### Yen Jai
-
 During summer 2025 I and a couple of classmates decided we wanted to make a game.
 
 We made a bullet hell game in unity

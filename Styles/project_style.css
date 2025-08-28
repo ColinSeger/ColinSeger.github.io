@@ -73,6 +73,13 @@
     }
 }
 
+.blueprint_image{
+    overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    max-width: 100%;
+}
+
 .redirect_button{
 
     /* width: 20px;
