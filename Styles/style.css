@@ -1,9 +1,9 @@
 
 :root{
-    --back_color: #8D7B68; 
-    --container_color: #F1DEC9;
-    --object_color: #C8B6A6;
-    --another_color: #A4907C;
+    --back_color: #222831; 
+    --container_color: #393E46;
+    --object_color: #00ADB5;
+    --another_color: #EEEEEE;
     --border_radius: 8px;
     --phone_width: 98dpi;
     /* Scroll Settings */    
@@ -21,15 +21,17 @@ header{
     width: 98%;
     padding: 1vw;
 
+    border-style: solid;
+    border-width: 2px;
     border-radius: var(--border_radius);
+    border-color: var(--object_color);
 
     margin-bottom: 0;
 
     /* Colors */
-    /* color:black; */
     background-color: var(--container_color);
 
-    box-shadow: #3B060A;
+    /* box-shadow: #3B060A; */
 }
 
 nav{
@@ -55,8 +57,9 @@ body{
     min-height: 100dvh;
     padding: 2vw;
 
-    /* color: black; */
+    color: var(--another_color);
     background-color: var(--back_color);
+    /* background-image: linear-gradient(var(--back_color), var(--another_color)); */
 
     /* Scroll Settings */    
     overflow-x: hidden;
@@ -73,7 +76,10 @@ footer{
     padding: 1vw;
 
     /* Corners */
+    border-style: solid;
+    border-width: 2px;
     border-radius: var(--border_radius);
+    border-color: var(--object_color);
     
     /* Colors */
     /* color: black; */
@@ -126,7 +132,10 @@ footer{
     padding: 1vw;
 
     /* Corners */
+    border-style: solid;
+    border-width: 2px;
     border-radius: var(--border_radius);
+    border-color: var(--object_color);
 
     /* color: black; */
     background-color: var(--container_color);
@@ -157,7 +166,10 @@ footer{
     padding: 1vw;
 
     /* Corners */
+    border-style: solid;
+    border-width: 2px;
     border-radius: var(--border_radius);
+    border-color: var(--object_color);
     
     /* Colors */
     /* color: black; */
@@ -181,13 +193,19 @@ footer{
 .right_side_containers{
     width: calc(100% - 4vw);
     height: auto;
+    margin: 1vw;
     padding: 1vw;
 
     /* Corners */
+    border-style: solid;
+    border-width: 3px;
     border-radius: var(--border_radius);
+    border-color: var(--object_color);
+    
 
-    background-color: var(--another_color);
-    margin: 1vw;
+    /* color: var(--another_color); */
+    background-color: var(--container_color);
+    /* margin: 1vw; */
 
     /* box-shadow: 5px 1px 10px 0px var(--back_color); */
 }
@@ -293,5 +311,6 @@ footer{
     background-image: url('/Images/Icons//github-mark.svg');
     background-repeat: no-repeat;
     background-size: contain;
+    padding-left: 28px;
     height: 25px;
 }

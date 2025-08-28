@@ -5,11 +5,14 @@
     margin-bottom: 2dvh;
     margin-left: 0;
 
+    border-style: solid;
+    border-width: 2px;
     border-radius: var(--border_radius);
+    border-color: var(--object_color);
 
     overflow: auto;
 
-    color: black;
+    /* color: black; */
     background-color: var(--container_color);
 
     @media (orientation: portrait) {
@@ -27,19 +30,9 @@
     /* Formatting */
     float: left;
     height: auto;
-    /* width: 30%; */
-    /* max-width: 50%; */
-    /* max-height: 40%; */
-
-    /* Internal */
-    /* object-fit: scale-down; */
 
     /* Corners */
     border-radius: var(--border_radius);
-    
-    /* Colors */
-    color: black;
-    background-color: var(--object_color);
 }
 
 .game_project_body{
@@ -51,14 +44,17 @@
     
 
     padding: 1%;
-    margin: 1%;
+    margin: calc(1% - 2px);
 
     /* Corners */
+    border-style: solid; 
+    border-width: 2px;
     border-radius: var(--border_radius);
+    border-color: var(--object_color);
 
     /* Colors */
-    color: black;
-    background-color: var(--object_color);
+    color: var(--another_color);
+    background-color: var(--container_color);
 
     /* Scroll Settings */    
     overflow-x: hidden;
@@ -87,9 +83,9 @@
     padding: 5px;
     border-radius: var(--border_radius);
 
-    background-color: var(--container_color);
+    background-color: var(--object_color);
 
-    color: black;
+    color: var(--another_color);
     text-decoration: none;
 }
 @media (hover: hover) {
