@@ -12,6 +12,10 @@
     scrollbar-color: var(--container_color) var(--object_color);
     scrollbar-width: thin;
 }
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  /* width: 7px; */
+}
 
 header{
     width: 98%;
