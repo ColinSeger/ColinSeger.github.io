@@ -43,7 +43,7 @@
     width: calc(50% - 4%);
     
 
-    padding: 1%;
+    padding: 1dvh;
     margin: calc(1% - 2px);
 
     /* Corners */
@@ -77,9 +77,6 @@
 }
 
 .redirect_button{
-
-    /* width: 20px;
-    height: 100px; */
     padding: 5px;
     border-radius: var(--border_radius);
 

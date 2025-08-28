@@ -197,7 +197,7 @@ a{
     width: calc(100% - 4vw);
     height: auto;
     margin: 1vw;
-    padding: 1vw;
+    padding: 1dvh;
 
     /* Corners */
     border-style: solid;
