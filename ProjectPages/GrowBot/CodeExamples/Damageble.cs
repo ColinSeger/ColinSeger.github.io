@@ -1,11 +1,13 @@
 using UnityEngine;
 
-public class Damageble : MonoBehaviour
+public class Damageable : MonoBehaviour
 {
-    [SerializeField]protected int health = 10, maxHealth = 10;
+    [SerializeField]protected float maxHealth = 10f;
     [SerializeField]protected Tier thisTier = Tier.Small;
-    [SerializeField]protected Rigidbody thisRigidbody;
+    [SerializeField]AnimationCurve returnRate;
+    protected float health = 10f;
     public enum Tier{
+        ExtraSmall,
         Small,
         Medium,
         Large
@@ -20,7 +22,7 @@ public class Damageble : MonoBehaviour
         return thisTier;
     }
 
-    public void DealDamage(int damage, Tier tier)
+    public virtual void DealDamage(float damage, Tier tier)
     {
         if(tier >= thisTier)
         {
@@ -28,11 +30,11 @@ public class Damageble : MonoBehaviour
 
             if(health <= 0)
             {
-                Death();
-            }           
+                Death(returnRate, tier);
+            }
         }
     }
-    public virtual void Death()
+    public virtual void Death(AnimationCurve curve, Tier tier)
     {
         Destroy(this.gameObject);
     }
