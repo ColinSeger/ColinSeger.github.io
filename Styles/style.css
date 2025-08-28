@@ -285,3 +285,9 @@ footer{
     background-size: contain;
     height: 25px;
 }
+#git_hub{
+    background-image: url('/Images/github-mark.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 25px;
+}
