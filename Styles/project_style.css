@@ -102,10 +102,10 @@
     }
 }
 #grow_bot_image{
-    height: 200px;
+    height: 300px;
     max-width: 100%;
     width: 100%;
-    background-image: url('/Images/OptimizedPosters/grow_bot_poster.webp');
+    background-image: url('/Images/OptimizedPosters/Growbot_Poster.webp');
     background-repeat: no-repeat;
     background-size: contain;
 }

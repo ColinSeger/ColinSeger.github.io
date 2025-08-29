@@ -30,6 +30,11 @@ I made the interaction system (Opening Doors, Picking up items and storing items
 
 Blueprint test image
 <div class="blueprint_image">
-<img src="../../Images/blueprintTest.png"></img>
+<img src="../../Images/Blueprints/in_bloom/blueprintTest.webp"></img>
 </div>
-<!-- ![Blueprint](../../Images/blueprintTest.png) -->
+
+
+Blueprint test image
+<div class="blueprint_image">
+<img src="../../Images/Blueprints/in_bloom/Interactor.webp"></img>
+</div>
