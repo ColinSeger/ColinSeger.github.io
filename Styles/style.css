@@ -132,7 +132,7 @@ a{
     margin-left: 0;
 
     /* Internal */
-    padding: 1vw;
+    padding: 1dvh;
 
     /* Corners */
     border-style: solid;

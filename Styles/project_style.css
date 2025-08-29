@@ -1,4 +1,5 @@
 .project_container{
+
     width: 100%;
     height: auto;
 
@@ -16,9 +17,17 @@
     background-color: var(--container_color);
 
     @media (orientation: portrait) {
-        margin-top: 0;
-        display: block;
         overflow-x: hidden;
+    }
+}
+
+.project_grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    @media (orientation: portrait) {
+        margin-top: 0;
+        grid-template-columns: 100%;
     }
 }
 
@@ -38,9 +47,9 @@
 .game_project_body{
     /* Formatting */
     /* box-sizing:border-box; */
-    float: left;
+    /* float: left; */
     /* max-height: 45dvh; */
-    width: calc(50% - 4%);
+    /* width: calc(50% - 4%); */
     
 
     padding: 1dvh;
