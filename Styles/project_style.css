@@ -50,7 +50,9 @@
     /* float: left; */
     /* max-height: 45dvh; */
     /* width: calc(50% - 4%); */
-    
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 65px 30rem auto;
 
     padding: 1dvh;
     margin: calc(1% - 2px);
@@ -74,7 +76,7 @@
     @media (orientation: portrait) {
         height: auto;
         width: 98%;
-        box-sizing: border-box;
+        /* box-sizing: border-box; */
     }
 }
 
@@ -93,6 +95,10 @@
 
     color: var(--another_color);
     text-decoration: none;
+    height: 1.5rem;
+    align-self: end;
+    width: 5.5rem;
+    align-content: center;
 }
 @media (hover: hover) {
 /* when hover is supported */
@@ -102,7 +108,7 @@
     }
 }
 #grow_bot_image{
-    height: 300px;
+    height: var(--picture_size);
     max-width: 100%;
     width: 100%;
     background-image: url('/Images/OptimizedPosters/Growbot_Poster.webp');
@@ -111,7 +117,7 @@
 }
 
 #dark_descent_image{
-    height: 300px;
+    height: var(--picture_size);
     max-width: 100%;
     width: 100%;
     background-image: url('/Images/OptimizedPosters/dark_descent_poster.webp');
@@ -120,7 +126,7 @@
 }
 
 #in_bloom_image{
-    height: 300px;
+    height: var(--picture_size);
     max-width: 100%;
     width: 100%;
     background-image: url('/Images/OptimizedPosters/in_bloom.webp');

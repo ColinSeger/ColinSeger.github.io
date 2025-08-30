@@ -27,14 +27,34 @@ why is it (x, y, z) but also (x, z, y) when going from C++ to blueprints
 #### Systems I worked on
 
 I made the interaction system (Opening Doors, Picking up items and storing items)
+- Interaction System
+- Inventory System
+- Doors
+- Lighting Transitions
+- Audio Triggers
+- AOE Effects
+- Locks
+- Animation Triggers
 
-Blueprint test image
+#### Spawn Safety
+We had a issue at a late point in development where the player could move through a wall or floor while loading in,
+so I was tasked with solving it as quick as possible and did that by disabling input and gravity until the floor had 
+loaded in. Doing that worked surprisingly well and was later tied into the loading screen as the thing to announce
+that the level should be loaded now.
+
+We also used a similar thing to fix enemies falling through the map sometimes depending on load order.
+
 <div class="blueprint_image">
 <img src="../../Images/Blueprints/in_bloom/blueprintTest.webp"></img>
 </div>
 
+#### Interaction
+Here is a blueprint of how the interaction system was implemented,
+we had an array of all interaction objects within a area and it would then go over them
+and performs the different interaction types on them. Now I would not say I'm happy with how I implemented this
+as I could have made it much simpler and easier to use. As a example I would probably not have multiple 
+functions on the interface and instead just return a "tag" value and then the number value array.
 
-Blueprint test image
 <div class="blueprint_image">
 <img src="../../Images/Blueprints/in_bloom/Interactor.webp"></img>
 </div>

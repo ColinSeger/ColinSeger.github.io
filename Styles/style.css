@@ -11,6 +11,8 @@
     overflow-y: auto;
     scrollbar-color: var(--container_color) var(--object_color);
     scrollbar-width: thin;
+
+    --picture_size: 30rem;
 }
 ::-webkit-scrollbar {
   -webkit-appearance: none;
