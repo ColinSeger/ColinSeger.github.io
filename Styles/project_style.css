@@ -27,7 +27,7 @@
 
     @media (orientation: portrait) {
         margin-top: 0;
-        grid-template-columns: 100%;
+        grid-template-columns: calc(100% - 2dvh);
     }
 }
 
