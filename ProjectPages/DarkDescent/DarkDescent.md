@@ -21,6 +21,13 @@ requirements set in stone and started work on a minor scalability issue I could 
 - Talking outside your discipline is critical
 
 
+#### Systems I worked on
+- Spell UI
+- Spell Casting
+- Enemies AI
+- Enemy Spawning
+- Enemy Types
+
 #### Base Spell
 
 This is the code that is the base spell that you can use to create new spells to be added to
@@ -122,7 +129,7 @@ Here is the code for how the spells where selected and then casted.
 
 You might notice how te usage of the new unity input system is not great and 
 that can be explained by that it was the first I had used it and therefore
-I made some poor desicions on how to use it.
+I made some poor decisions on how to use it.
 
 Nowadays I would not have the input be registered in the update loop and instead just tie it to
 the input event

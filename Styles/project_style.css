@@ -46,10 +46,6 @@
 
 .game_project_body{
     /* Formatting */
-    /* box-sizing:border-box; */
-    /* float: left; */
-    /* max-height: 45dvh; */
-    /* width: calc(50% - 4%); */
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 65px 30rem auto;
