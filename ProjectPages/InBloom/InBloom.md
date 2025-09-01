@@ -58,3 +58,93 @@ functions on the interface and instead just return a "tag" value and then the nu
 <div class="blueprint_image">
 <img src="../../Images/Blueprints/in_bloom/Interactor.webp"></img>
 </div>
+
+#### Door Code
+
+The door script was one of the first things I made in this project and I ended up 
+making it in **C++** since I thought it would be hard to migrate blueprints to **C++**.
+
+Ended up finding out that that was not the case after some time
+
+```C++
+UENUM(BlueprintType)
+enum class EDoorOpeningMode : uint8 {
+	Single,
+	Multiple
+};
+
+USTRUCT(BlueprintType)
+struct FDoorStruct{
+	GENERATED_BODY()
+	
+	FRotator origin = FRotator();
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Opening Settings")
+	TObjectPtr<UStaticMeshComponent> meshDoor;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Opening Settings")
+	float rotation;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Opening Settings")
+	float speed;
+};
+
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FDoorOpen);
+
+UCLASS()
+class THEBEAUTIFULHORROR_API ADoor : public AActor
+{
+	GENERATED_BODY()
+	
+public:	
+	// Sets default values for this actor's properties
+	ADoor();
+	UPROPERTY(BlueprintAssignable, Category= "Door")
+	FDoorOpen doorOpened;
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
+
+	UFUNCTION(BlueprintCallable)
+	void ChangeDoorState();
+
+	UFUNCTION(BlueprintCallable)
+	void DoorStateFromLocation(FVector location);
+
+	UFUNCTION(BlueprintCallable)
+	void AddDoorToOpen(FDoorStruct door);
+
+protected:
+
+	bool isOpen = false;
+
+	const float MIN_LERP = -1;
+	const float MAX_LERP = 1;
+
+	float lerpValue = 0;
+
+	// UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Opening Settings")
+	TArray<FDoorStruct> rotationPoints;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Opening Settings")
+	EDoorOpeningMode doorOpenMode = EDoorOpeningMode::Single;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Opening Settings")
+	float rotation = 90;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Opening Settings")
+	float openingSpeed = 1;
+
+	float targetRotation = rotation;
+
+	FRotator origin = FRotator();
+
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
+
+
+	void MoveDoors();
+
+	void MoveSingleDoor();
+
+};
+```
