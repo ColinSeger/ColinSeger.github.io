@@ -129,3 +129,19 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+#yen_jai_image{
+    height: var(--picture_size);
+    max-width: 100%;
+    width: 100%;
+    background-image: url('/Images/LegacyImages/Boster.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#real_fps_image{
+    height: var(--picture_size);
+    max-width: 100%;
+    width: 100%;
+    background-image: url('/Images/LegacyImages/Real_Fps.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
