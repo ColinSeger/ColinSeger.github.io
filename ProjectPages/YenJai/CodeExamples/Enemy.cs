@@ -1,21 +1,3 @@
-## What is Yen Jai
-
-Yen jai is a project me and a couple friend made over the summer 2025.
-
-The concept is meant to be a **bullet hell** where the player faces of against certain enemies 
-that can come in shot their patterns and then leaves after performing their movement pattern.
-
-### My Takeaways
-- Make Tools
-- Make Tools
-- Make Tools
-
-#### Systems I worked on
-- Spawning
-- Enemy Movement
-- Wave Manager
-
-``` C#
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
@@ -179,5 +161,3 @@ public class Enemy
         }
     }
 }
-
-```
