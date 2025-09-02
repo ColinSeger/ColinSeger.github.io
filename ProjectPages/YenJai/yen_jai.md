@@ -15,6 +15,9 @@ that can come in shot their patterns and then leaves after performing their move
 - Enemy Movement
 - Wave Manager
 
+#### Spawning
+Instantiatied the enemy prefab and added it to the enemy manager that had references to all enemies
+
 ``` C#
 using System.Collections;
 using System.Collections.Generic;
