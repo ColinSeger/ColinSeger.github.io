@@ -48,7 +48,7 @@
     /* Formatting */
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 65px 30rem auto;
+    grid-template-rows: 90px 30rem auto;
 
     padding: 1dvh;
     margin: calc(1% - 2px);
