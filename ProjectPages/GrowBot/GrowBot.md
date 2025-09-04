@@ -1,6 +1,8 @@
 ## What is GrowBot
 
-In grow bot you play as a abandoned toy
+In grow bot you play as a abandoned toy fueled by anger with only the goal of destruction.
+The goal for the player is to by destroying things grow bigger and stronger, and by destroying things 
+you end up getting a higher score that is saved across runs.
 
 ## My Experience
 
@@ -18,7 +20,7 @@ how fun I had developing this game.
 
 ### My Takeaways
 - Communication is key
-- What can be accomplished in a short time with effort
+- The amount of things one can get done with effort
 - That sacrifices on what can be done has to be done (When time is limited)
 
 ### Code Snippets
@@ -166,7 +168,13 @@ IEnumerator DeathAnimation()
 
 #### Peak Code
 
-Here is some of the worst code I probably have ever written but it works surprisingly well
+Here is some of the worst code I probably have ever written but it works surprisingly well.
+
+Now what could the reason be for this bad code? Well it boils down to time. We the last day
+realised that we needed more OMPH when we hit our objects, now one would think we could just use
+the animator for that and we also thought that but when we tried to use it we realised there was issues
+with differently scaled objects. The fastest way I thought of solving this was this and I am fully aware 
+that the code could have been way better this code got the job done.
 
 ```C#
 
