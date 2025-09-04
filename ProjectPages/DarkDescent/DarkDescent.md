@@ -1,8 +1,12 @@
 ## What is Dark Descent
 
 
-In Dark Descent you play as a templar stuck in limbo. With magic
+In Dark Descent you play as a templar stuck in limbo. You meet Cain the son of Adam and Eve 
+who guides you on how to use your spells. During your time in limbo you are challanged with wave after wave
+of demons. The final wave you face is a epic boss fight against Cain who betrays you with the objective of 
+escaping hell using your daggerblade.
 
+## My Experience
 
 I enjoyed working on this project even though I did not enjoy the concept.
 
