@@ -7,6 +7,8 @@ I have most of my experience in **Unity** and **Unreal**.
 
 **Contact Me**   
 
+---
+
 <a href="https://www.linkedin.com/in/colin-segerljung/" class="icons" id="linkedin"> 
     <thing class="redirect_button"> LinkedIn </thing>
 </a>
@@ -14,4 +16,5 @@ I have most of my experience in **Unity** and **Unreal**.
 <a href="https://github.com/ColinSeger" class="icons" id="git_hub"> 
     <thing class="redirect_button"> GitHub </thing>
 </a>
+
 ---

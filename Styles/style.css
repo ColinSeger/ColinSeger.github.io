@@ -221,7 +221,7 @@ a{
     /* Corners */
     border-radius: var(--border_radius);
     
-    background-image: url('/Images/PortfolioPictures/temp_portfolio_picture.webp');
+    background-image: url('/Images/PortfolioPictures/self_portrait.webp');
     background-repeat: no-repeat;
     background-size: contain;
 
