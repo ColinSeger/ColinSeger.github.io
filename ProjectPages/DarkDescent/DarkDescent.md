@@ -6,6 +6,9 @@ who guides you on how to use your spells. During your time in limbo you are chal
 of demons. The final wave you face is a epic boss fight against Cain who betrays you with the objective of 
 escaping hell using your daggerblade.
 
+What where our goals with this project? Well it was to create a game that in some way tied into the "Daggerblade" and make sure it could "technically"
+run on a phone, in our team we put quite some time on making sure our game actually could run on phone to some extent.
+
 ## My Experience
 
 I enjoyed working on this project even though I did not enjoy the concept.
@@ -19,6 +22,8 @@ the decision was made for me to overlook the implementation of the magic system.
 When I got time to take a look at the spells system I made sure that the designers had their 
 requirements set in stone and started work on a minor scalability issue I could see with the spell system
 
+I collaborated with artists programmers and designers in how to optimize our game for phone
+
 ### My Takeaways
 - Reinforced that communication is key
 - Fmod is a pain if not setup properly
@@ -31,6 +36,7 @@ requirements set in stone and started work on a minor scalability issue I could 
 - Enemies AI
 - Enemy Spawning
 - Enemy Types
+- Phone Optimization
 
 #### Base Spell
 
