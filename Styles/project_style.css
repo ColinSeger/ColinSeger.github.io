@@ -1,17 +1,16 @@
 .project_container{
 
-    width: 100%;
-    height: auto;
+    display: grid;
+    gap: 1vw;
+    grid-template-columns: 100%;
 
-    margin-bottom: 2dvh;
-    margin-left: 0;
+    height: fit-content;
+    overflow: visible;
 
     border-style: solid;
     border-width: 2px;
     border-radius: var(--border_radius);
     border-color: var(--object_color);
-
-    overflow: auto;
 
     /* color: black; */
     background-color: var(--container_color);
@@ -82,7 +81,10 @@
     overflow-y: scroll;
     max-width: 100%;
 }
-
+.image_comparison{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
 .game_image{
     max-width: 100%;
 }
