@@ -2,8 +2,8 @@
    
 ---
 
-I am **Colin Segerljung** a game programmer who is experienced in **C#** and **C++**.
-I have most of my experience in **Unity** and **Unreal**.
+I am **Colin Segerljung** a game/engine programmer who is experienced in **C#** and **C++**.
+I have most of my experience in **Unity** and **Unreal** but I'm also working on my own engine.
 
 **Contact Me**   
 

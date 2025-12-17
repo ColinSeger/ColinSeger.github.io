@@ -54,7 +54,7 @@
     margin: calc(1% - 2px);
 
     /* Corners */
-    border-style: solid; 
+    border-style: solid;
     border-width: 2px;
     border-radius: var(--border_radius);
     border-color: var(--object_color);
@@ -63,7 +63,7 @@
     color: var(--another_color);
     background-color: var(--container_color);
 
-    /* Scroll Settings */    
+    /* Scroll Settings */
     overflow-x: hidden;
     overflow-y: auto;
     scrollbar-color: var(--container_color) var(--object_color);
@@ -83,18 +83,23 @@
     max-width: 100%;
 }
 
+.game_image{
+    max-width: 100%;
+}
+
 .redirect_button{
-    padding: 5px;
+    padding: 4px;
     border-radius: var(--border_radius);
 
     background-color: var(--object_color);
 
     color: var(--another_color);
     text-decoration: none;
-    height: 1.5rem;
-    align-self: end;
+    /*height: 1.5rem;*/
+    align-self: start;
+    /*align-self: end;*/
     width: 5.5rem;
-    align-content: center;
+    /*align-content: center;*/
 }
 @media (hover: hover) {
 /* when hover is supported */
@@ -142,6 +147,15 @@
     max-width: 100%;
     width: 100%;
     background-image: url('/Images/LegacyImages/Real_Fps.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#project_liminal{
+    height: var(--picture_size);
+    max-width: 100%;
+    width: 100%;
+    background-image: url('/Images/OptimizedPosters/ProjectLiminal.webp');
     background-repeat: no-repeat;
     background-size: contain;
 }

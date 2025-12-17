@@ -12,7 +12,7 @@ The game was fine to implement nothing major technical issues I could have reall
 we did however have issues communicating ideas during this project, partially due to people missing
 and just information lost between disciplines.
 
-We used fmod and suffered from a lot of issues on that front to begin with.
+We used Fmod and suffered from a lot of issues on that front to begin with.
 
 Unreal had some issues when we were using it, like a example would be how when Perforce was down 
 Unreal would also freeze until Perforce was back, though that is more of a Perforce issue than a Unreal one.

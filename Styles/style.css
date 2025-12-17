@@ -1,14 +1,15 @@
 
 :root{
-    --back_color: #222831; 
+    --back_color: #222831;
     --container_color: #393E46;
     --object_color: #00ADB5;
     --another_color: #EEEEEE;
     --border_radius: 8px;
     --phone_width: 98dpi;
-    /* Scroll Settings */    
-    overflow-x: hidden;
-    overflow-y: auto;
+    display: grid;
+    /* Scroll Settings */
+    overflow-x: visible;
+    overflow-y: visible;
     scrollbar-color: var(--container_color) var(--object_color);
     scrollbar-width: thin;
 
@@ -20,7 +21,8 @@
 }
 
 header{
-    width: 98%;
+    height: fit-content;
+    /*width: 100%;*/
     padding: 1vw;
 
     border-style: solid;
@@ -55,6 +57,10 @@ nav{
 }
 
 body{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    row-gap: 3dvh;
     min-width: auto;
     min-height: 100dvh;
     padding: 2vw;
@@ -63,9 +69,9 @@ body{
     background-color: var(--back_color);
     /* background-image: linear-gradient(var(--back_color), var(--another_color)); */
 
-    /* Scroll Settings */    
-    overflow-x: hidden;
-    overflow-y: auto;
+    /* Scroll Settings */
+    overflow-x: visible;
+    overflow-y: visible;
     scrollbar-color: var(--container_color) var(--object_color);
     scrollbar-width: thin;
 
@@ -73,8 +79,8 @@ body{
 }
 
 footer{
-    float: right;
-    width: 98%;
+    /*float: right;*/
+    /*width: 98%;*/
     padding: 1vw;
 
     /* Corners */
@@ -82,7 +88,7 @@ footer{
     border-width: 2px;
     border-radius: var(--border_radius);
     border-color: var(--object_color);
-    
+
     /* Colors */
     /* color: black; */
     background-color: var(--container_color);
@@ -90,6 +96,25 @@ footer{
 
 a{
     text-decoration: none;
+    /*height: 100rem;*/
+}
+
+h1{
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+h2{
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+h3{
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+h4{
+    margin-top: 0.5rem;
+    margin-bottom: 0;
 }
 
 .navigation_button{
@@ -107,34 +132,33 @@ a{
 
 
 #main_container{
-    padding: 2dvh;
-    padding-left: 0;
-    padding-right: 0;
-    height: auto;
+    display: grid;
+    gap: 1vw;
+    grid-template-columns: 30% calc(70% - 1vw);
 
-    contain: content;
-    /* min-height: 80dvh; */
+
+    height: fit-content;
+    overflow: visible;
+
     margin-bottom: 1dvh;
-    width: 100%;
-    
+    /*width: 100%;*/
+
     @media (orientation: portrait) {
         height: auto;
+        grid-template-columns:100%;
         /* margin-bottom: -3dvh; */
     }
 }
 
 .left_side{
-    box-sizing:border-box;
-    float: left;
-    height: 100%;
-    width: 30%;
-    max-width: 30%;
-    max-height: 100%;
-    margin-right: 2vw;
-    margin-left: 0;
+    position: sticky;
+    top: 1rem;
+    align-self: start;
+    height: fit-content;
 
     /* Internal */
     padding: 1dvh;
+    overflow: visible;
 
     /* Corners */
     border-style: solid;
@@ -148,26 +172,24 @@ a{
     box-shadow: 5px;
 
     @media (orientation: portrait) {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        /* display: flex;
-        justify-content: left; */
+        position: initial;
+        /*width: 100%;*/
+        /*max-width: 100%;*/
     }
 }
 
 .right_side{
     /* Formatting */
-    box-sizing:border-box;
-    float: left;
     display: grid;
     grid-template-columns: 100%;
+    /*column-gap: 1dvw;*/
     row-gap: 1dvh;
-    
-    width: calc(70% - 2vw);
+
+    /*width: calc(70% - 2vw);*/
     margin-right: 0;
-    height: 100%;
-    margin-bottom: 1dvh;
+    height: fit-content;
+    width: fit-content;
+    /*margin-bottom: 1dvh;*/
 
     /* Internal */
     padding: 1vw;
@@ -177,13 +199,13 @@ a{
     border-width: 2px;
     border-radius: var(--border_radius);
     border-color: var(--object_color);
-    
+
     /* Colors */
     background-color: var(--container_color);
 
     @media (orientation: portrait) {
-        width: 100%;
-        max-width: 100%;
+        /*width: 100%;*/
+        /*max-width: 100%;*/
 
         height: auto;
 
@@ -193,7 +215,9 @@ a{
 }
 
 .right_side_containers{
-    height: auto;
+    height: fit-content;
+    /*width: max-content;*/
+    /*max-width: 100%;*/
     padding: 1dvh;
 
     /* Corners */
@@ -220,7 +244,7 @@ a{
 
     /* Corners */
     border-radius: var(--border_radius);
-    
+
     background-image: url('/Images/PortfolioPictures/self_portrait.webp');
     background-repeat: no-repeat;
     background-size: contain;
@@ -240,7 +264,7 @@ a{
 
     /* Corners */
     border-radius: var(--border_radius);
-    
+
     @media (orientation: portrait) {
         width: auto;
         /* height: 80%; */
@@ -252,15 +276,15 @@ a{
 }
 
 .back_button{
-    box-sizing: border-box;
-    float: left;
-    width: 100%;
-    height: 20px;
+    /*box-sizing: border-box;*/
+    /*float: left;*/
+    /*width: 100%;*/
+    height: fit-content;
     /* padding-left: 25px; */
-    margin-top: 2dvh;
-    margin-bottom: 0px;
+    /*margin-top: 5dvh;*/
+    /*margin-bottom: 0px;*/
     text-decoration: none;
-    
+
 }
 
 .icons{
@@ -289,6 +313,12 @@ a{
 }
 #itch_io{
     background-image: url('/Images/Icons//itch-io-svgrepo-com.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 25px;
+}
+#steam{
+    background-image: url('/Images/Icons//steam-1.svg');
     background-repeat: no-repeat;
     background-size: contain;
     height: 25px;
