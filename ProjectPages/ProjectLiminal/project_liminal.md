@@ -3,23 +3,30 @@
 
 ## What Is Project Liminal
 
-Project Liminal is a school project that was intended to be a game that is replayable.
-The way we tried to make that was via a friendslop game where the goal is to under pressure identify anomalies.
-The way these anomalies reveal themself is that you and your friend will not be seeing the same thing. 
+Project Liminal is a school project that was intended to be a game that is re-playable.
+The way we tried to make that was via a friend-slop game where the goal is to under pressure identify anomalies.
+The way these anomalies reveal themselves is that you and your friend will not be seeing the same thing. 
 
 Visual Example:
 <div class="image_comparison">
-<img src="../../Images/LegacyImages/snow1.jpg" class="game_image"></img>
-<img src="../../Images/LegacyImages/snow2.jpg" class="game_image"></img>
+    <img src="../../Images/LegacyImages/snow1.jpg" class="game_image"></img>
+    <img src="../../Images/LegacyImages/snow2.jpg" class="game_image"></img>
 </div>
-<!--<img src="Images/LegacyImages/snow1.jpg"></img>-->
-<!--![Example Image](/Images/LegacyImages/snow1.jpg)-->
-<!--![Example Image2](/Images/LegacyImages/snow2.jpg)-->
 
 In this example a randomly selected player might see the first or second image displayed on a painting in the game.
 While the others see the other example.
 
 This project was done 100% in blueprints due to the extreme time constraints
+
+<iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/n-CLQhPSjEc?si=xzWejycV9njthC4K" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen
+>
+</iframe>
 
 ### My Takeaways
 - Syncing Multiplayer Is Hard
@@ -33,3 +40,8 @@ This project was done 100% in blueprints due to the extreme time constraints
 - Win Condition/Score
 - Enemy AI/Behavior
 - Ending Trigger
+
+#### Anomaly Systems
+
+The way it ended up working is overly convoluted since it was our first time doing multiplayer and we were trying to do something 
+that is a bit working against what UE5 tries to do when syncing objects online, since we wanted the paintings to be synced in some ways but not all ways

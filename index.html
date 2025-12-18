@@ -9,30 +9,48 @@
         <script src="Scripts/loadMarkdown.js"></script>
         <title>Colin Segerljung Portfolio</title>
     </head>
+
+    <template id="template_test">
+        <div class="right_side_containers">
+            <div>
+                <h3 class="title">Title Failed To Load</h3>
+                <h5 class="context">Context Failed To Load</h5>
+            </div>
+            <div  class="text">
+                If you see this it failed to load project file.
+            </div>
+            <button onclick="" class="load_text">Click</button>
+            <!--<a href="ProjectPages/InBloom.html" class="redirect_button">
+                Read More
+            </a>-->
+        </div>
+    </template>
+
 <body>
     <!-- Header -->
     <header>
         <h1>Colin Segerljung Portfolio</h1>
-
     </header>
 
     <!-- Center Container -->
     <div id="main_container">
         <!-- Left Side Body -->
-        <div class="left_side">
-            <h2>Colin Segerljung</h2>
+        <div class="left_side" id="left_side">
+            <!--<h2>Colin Segerljung</h2>
             <br/>
-            <div class="portfolio_picture"></div>
+            <img src='/Images/PortfolioPictures/self_portrait.webp' alt="Image Failed to load" class="portfolio_picture"></img>
             <br/>
             <div class="picture_description_right", id="personal_descriptor">
                 <script>
                     load_markdown_file('/Description/description.md', "personal_descriptor");
                 </script>
-            </div>
+            </div>-->
         </div>
-
+        <!--<script>
+            load_markdown_file('/Description/description.md', "personal_descriptor");
+        </script>-->
         <!-- Right Side Body -->
-        <div class="right_side">
+        <div class="right_side", id="right_side">
             <h2>Highlighted Projects</h2>
             <!--
             <div class="right_side_containers">
@@ -62,7 +80,6 @@
                     Go To
                 </a>
             </div>
-            -->
             <div class="right_side_containers">
                 <div>
                     <h3>In Bloom</h3>
@@ -71,9 +88,7 @@
                 <div  id="in_bloom">
                     If you see this it failed to load project file.
                 </div>
-                <script>
-                    load_markdown_file("ProjectSummary/in_bloom.md", "in_bloom");
-                </script>
+                <button onclick="parse_and_apply_id('ProjectPages/InBloom/InBloom.md', 'right_side'), parse_and_apply_id('ProjectPages/InBloom/InBloomLeft.md', 'left_side')">Click</button>
                 <a href="ProjectPages/InBloom.html" class="redirect_button">
                     Read More
                 </a>
@@ -87,9 +102,6 @@
                 <div id="dark">
                     If you see this it failed to load project file.
                 </div>
-                <script>
-                    load_markdown_file("ProjectSummary/dark_descent.md", "dark");
-                </script>
                 <a href="ProjectPages/DarkDescent.html" class="redirect_button">
                     Read More
                 </a>
@@ -101,17 +113,17 @@
                     <h5>Game-Project: 1</h5>
                 </div>
 
-                <!-- <div class="project_picture" id="grow_bot_image"></div> -->
                 <div id="highlight_grow_bot">
                     If you see this it failed to load project file.
                 </div>
-                <script>
-                    load_markdown_file("ProjectSummary/grow_bot.md", "highlight_grow_bot");
-                </script>
                 <a href="ProjectPages/GrowBot.html" class="redirect_button">
                     Read More
                 </a>
             </div>
+            -->
+            <script>
+                load_defaults();
+            </script>
         </div>
     </div>
 

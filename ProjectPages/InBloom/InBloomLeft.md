@@ -1,0 +1,17 @@
+
+<!--<a href="../index.html" class="back_button"> <thing class="redirect_button"> Go Back </thing></a>-->
+<button onclick="load_defaults()">Click</button>
+
+<h2>In Bloom</h2>
+<br/>
+
+<div id="in_bloom_image"></div>
+<h3>Project Details</h3>
+<ul>
+    <li>7 Weeks</li>
+    <li>Made in Unreal</li>
+    <li>Team of 19</li>
+</ul>
+
+<a href="https://futuregames.itch.io/in-bloom" class="icons" id="itch_io"> <thing class="redirect_button"> Try it out </thing></a>
+<a href="https://store.steampowered.com/app/4185520/In_Bloom_Prologue/" class="icons" id="steam"> <thing class="redirect_button"> Try it out </thing></a>

@@ -1,5 +1,13 @@
+
+<h2>Colin Segerljung</h2>
+
+<br/>
+<img src='/Images/PortfolioPictures/self_portrait.webp' alt="Image Failed to load" class="portfolio_picture"></img>
+<br/>
+<div class="picture_description_right", id="personal_descriptor">
+
 ### Description   
-   
+    
 ---
 
 I am **Colin Segerljung** a game/engine programmer who is experienced in **C#** and **C++**.
@@ -18,3 +26,4 @@ I have most of my experience in **Unity** and **Unreal** but I'm also working on
 </a>
 
 ---
+</div>

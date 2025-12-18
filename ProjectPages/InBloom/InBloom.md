@@ -25,8 +25,6 @@ why is it (x, y, z) but also (x, z, y) when going from C++ to blueprints
 - Unreal was surprisingly annoying to work in
 
 #### Systems I worked on
-
-I made the interaction system (Opening Doors, Picking up items and storing items)
 - Interaction System
 - Inventory System
 - Doors
@@ -45,7 +43,7 @@ that the level should be loaded now.
 We also used a similar thing to fix enemies falling through the map sometimes depending on load order.
 
 <div class="blueprint_image">
-<img src="../../Images/Blueprints/in_bloom/blueprintTest.webp"></img>
+<img src="Images/Blueprints/in_bloom/blueprintTest.webp"></img>
 </div>
 
 #### Interaction
@@ -56,7 +54,7 @@ as I could have made it much simpler and easier to use. As a example I would pro
 functions on the interface and instead just return a "tag" value and then the number value array.
 
 <div class="blueprint_image">
-<img src="../../Images/Blueprints/in_bloom/Interactor.webp"></img>
+<img src="Images/Blueprints/in_bloom/Interactor.webp"></img>
 </div>
 
 #### Door Code
