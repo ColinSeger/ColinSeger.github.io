@@ -1,9 +1,8 @@
-
-:root{
+:root {
     --back_color: #222831;
-    --container_color: #393E46;
-    --object_color: #00ADB5;
-    --another_color: #EEEEEE;
+    --container_color: #393e46;
+    --object_color: #00adb5;
+    --another_color: #eeeeee;
     --border_radius: 8px;
     --phone_width: 98dpi;
     display: grid;
@@ -16,11 +15,11 @@
     --picture_size: 30rem;
 }
 ::-webkit-scrollbar {
-  -webkit-appearance: none;
-  /* width: 7px; */
+    -webkit-appearance: none;
+    /* width: 7px; */
 }
 
-header{
+header {
     height: fit-content;
     /*width: 100%;*/
     padding: 1vw;
@@ -38,7 +37,7 @@ header{
     /* box-shadow: #3B060A; */
 }
 
-nav{
+nav {
     margin-top: 0;
     height: 5dvh;
     width: 100%;
@@ -56,7 +55,7 @@ nav{
     border-bottom-right-radius: var(--border_radius);
 }
 
-body{
+body {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
@@ -78,7 +77,7 @@ body{
     font-family: sans-serif;
 }
 
-footer{
+footer {
     /*float: right;*/
     /*width: 98%;*/
     padding: 1vw;
@@ -94,30 +93,30 @@ footer{
     background-color: var(--container_color);
 }
 
-a{
+a {
     text-decoration: none;
     /*height: 100rem;*/
 }
 
-h1{
+h1 {
     margin-top: 0.5rem;
     margin-bottom: 0;
 }
 
-h2{
+h2 {
     margin-top: 0.5rem;
     margin-bottom: 0;
 }
-h3{
+h3 {
     margin-top: 0.5rem;
     margin-bottom: 0;
 }
-h4{
+h4 {
     margin-top: 0.5rem;
     margin-bottom: 0;
 }
 
-.navigation_button{
+.navigation_button {
     display: flex;
     align-self: center;
     justify-content: center;
@@ -130,12 +129,10 @@ h4{
     border: 2px;
 }
 
-
-#main_container{
+#main_container {
     display: grid;
     gap: 1vw;
     grid-template-columns: 30% calc(70% - 1vw);
-
 
     height: fit-content;
     width: 100%;
@@ -146,12 +143,12 @@ h4{
 
     @media (orientation: portrait) {
         height: auto;
-        grid-template-columns:100%;
+        grid-template-columns: 100%;
         /* margin-bottom: -3dvh; */
     }
 }
 
-.left_side{
+.left_side {
     position: sticky;
     top: 1rem;
     align-self: start;
@@ -177,7 +174,7 @@ h4{
     }
 }
 
-.right_side{
+.right_side {
     /* Formatting */
     display: grid;
     grid-template-columns: 100%;
@@ -206,7 +203,7 @@ h4{
     }
 }
 
-.right_side_containers{
+.right_side_containers {
     height: fit-content;
     /*width: max-content;*/
     /*max-width: 100%;*/
@@ -221,15 +218,15 @@ h4{
     background-color: var(--container_color);
 }
 
-.portfolio_picture{
+.portfolio_picture {
     /* Formatting */
     float: left;
     /*height: 400px;*/
     width: 100%;
     max-width: 100%;
     /* max-height: 80%; */
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
 
     /* Internal */
     /*object-fit: scale-down;*/
@@ -237,7 +234,7 @@ h4{
     /* Corners */
     border-radius: var(--border_radius);
 
-    background-image: url('/Images/PortfolioPictures/self_portrait.webp');
+    background-image: url("/Images/PortfolioPictures/self_portrait.webp");
     background-repeat: no-repeat;
     /*background-size: contain;*/
 
@@ -249,7 +246,7 @@ h4{
     }
 }
 
-.picture_description_right{
+.picture_description_right {
     /* Formatting */
     float: left;
     width: 100%;
@@ -267,12 +264,12 @@ h4{
     }
 }
 
-.back_button{
+.back_button {
     height: fit-content;
     text-decoration: none;
 }
 
-.icons{
+.icons {
     box-sizing: border-box;
     float: left;
     width: 100%;
@@ -286,30 +283,30 @@ h4{
     }
 }
 
-#linkedin{
-    background-image: url('/Images/Icons/linkedin-svgrepo-com.svg');
+#linkedin {
+    background-image: url("/Images/Icons/linkedin-svgrepo-com.svg");
     background-repeat: no-repeat;
     background-size: contain;
 }
-#phone_icon{
-    background-image: url('/Images/Icons//phone.svg');
+#phone_icon {
+    background-image: url("/Images/Icons//phone.svg");
     background-repeat: no-repeat;
     background-size: contain;
 }
-#itch_io{
-    background-image: url('/Images/Icons//itch-io-svgrepo-com.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 25px;
-}
-#steam{
-    background-image: url('/Images/Icons//steam-1.svg');
+#itch_io {
+    background-image: url("/Images/Icons//itch-io-svgrepo-com.svg");
     background-repeat: no-repeat;
     background-size: contain;
     height: 25px;
 }
-#git_hub{
-    background-image: url('/Images/Icons//github-mark.svg');
+#steam {
+    background-image: url("/Images/Icons//steam-1.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 25px;
+}
+#git_hub {
+    background-image: url("/Images/Icons//github-mark.svg");
     background-repeat: no-repeat;
     background-size: contain;
     padding-left: 28px;
