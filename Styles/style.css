@@ -21,7 +21,7 @@
 
 header {
     height: fit-content;
-    /*width: 100%;*/
+    /* width: 100%; */
     padding: 1vw;
 
     border-style: solid;
@@ -63,6 +63,7 @@ body {
     min-width: auto;
     min-height: 100dvh;
     padding: 2vw;
+    max-width: 100dvw;
 
     color: var(--another_color);
     background-color: var(--back_color);
@@ -131,7 +132,7 @@ h4 {
 
 #main_container {
     display: grid;
-    gap: 1vw;
+    gap: 1dvw;
     grid-template-columns: 30% calc(70% - 1vw);
 
     height: fit-content;
@@ -144,6 +145,7 @@ h4 {
     @media (orientation: portrait) {
         height: auto;
         grid-template-columns: 100%;
+        gap: 0;  
         /* margin-bottom: -3dvh; */
     }
 }
@@ -170,6 +172,7 @@ h4 {
     box-shadow: 5px;
 
     @media (orientation: portrait) {
+        width: calc(100% - (1dvw + 2dvh + 2px));
         position: initial;
     }
 }
@@ -197,6 +200,7 @@ h4 {
 
     @media (orientation: portrait) {
         height: auto;
+        width: calc(100% - (1dvw + 1dvh + 2px));
 
         margin-top: 1dvh;
         margin-bottom: 1vh;
@@ -220,7 +224,7 @@ h4 {
 
 .portfolio_picture {
     /* Formatting */
-    float: left;
+    /* float: left; */
     /*height: 400px;*/
     width: 100%;
     max-width: 100%;
@@ -241,14 +245,14 @@ h4 {
     @media (orientation: portrait) {
         width: 100%;
         /*height: 420px;*/
-        margin-right: 0;
-        display: flex;
+        /* margin-right: 0; */
+        /* display: flex; */
     }
 }
 
 .picture_description_right {
     /* Formatting */
-    float: left;
+    /* float: left; */
     width: 100%;
 
     /* Corners */
@@ -257,10 +261,10 @@ h4 {
     @media (orientation: portrait) {
         width: auto;
         /* height: 80%; */
-        display: flex;
-        float: none;
+        /* display: flex; */
+        /* float: none; */
         height: 50%;
-        display: block;
+        /* display: block; */
     }
 }
 
@@ -280,6 +284,7 @@ h4 {
     text-decoration: none;
     @media (orientation: portrait) {
         float: none;
+        width: auto;
     }
 }
 
