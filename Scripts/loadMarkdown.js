@@ -79,6 +79,7 @@ async function load_defaults(){
     right_container.appendChild(cloned);
     hljs.highlightAll();
   };
+  document.getElementById('header').scrollIntoView();
   // load_markdown_file('/Description/description.md', "personal_descriptor");
 }
 

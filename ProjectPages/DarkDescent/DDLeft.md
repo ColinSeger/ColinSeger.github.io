@@ -1,6 +1,6 @@
 
 <button onclick="load_defaults()" class="left_button">
-  Click
+  Go Back
 </button>
 
 <h2>

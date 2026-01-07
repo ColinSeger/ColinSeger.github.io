@@ -99,6 +99,25 @@ a {
     /*height: 100rem;*/
 }
 
+button{
+    height: fit-content;
+    /* text-decoration: none; */
+    border: 0;
+
+    padding: 4px;
+    border-radius: var(--border_radius);
+
+    background-color: var(--object_color);
+
+    color: var(--another_color);
+    width: 5.5rem;
+}
+
+button:hover{
+    color: var(--container_color);
+    background-color: var(--back_color);
+}
+
 h1 {
     margin-top: 0.5rem;
     margin-bottom: 0;

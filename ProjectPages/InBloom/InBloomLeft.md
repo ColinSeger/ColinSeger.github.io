@@ -1,6 +1,6 @@
 
 <!--<a href="../index.html" class="back_button"> <thing class="redirect_button"> Go Back </thing></a>-->
-<button onclick="load_defaults()">Click</button>
+<button onclick="load_defaults()">Go Back</button>
 
 <h2>In Bloom</h2>
 <br/>
