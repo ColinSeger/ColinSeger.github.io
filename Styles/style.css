@@ -164,7 +164,7 @@ h4 {
     @media (orientation: portrait) {
         height: auto;
         grid-template-columns: 100%;
-        gap: 0;  
+        gap: 0;
         /* margin-bottom: -3dvh; */
     }
 }
@@ -227,9 +227,11 @@ h4 {
 }
 
 .right_side_containers {
+    /*display: grid;
+    grid-template-columns: 50%, 50%;
+    row-gap: 1dvh;*/
+
     height: fit-content;
-    /*width: max-content;*/
-    /*max-width: 100%;*/
     padding: 1dvh;
 
     /* Corners */

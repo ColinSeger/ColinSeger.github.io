@@ -64,7 +64,9 @@ making it in **C++** since I thought it would be hard to migrate blueprints to *
 
 Ended up finding out that that was not the case after some time
 
-```C++
+<pre>
+    <code class="language-cpp">
+    
 UENUM(BlueprintType)
 enum class EDoorOpeningMode : uint8 {
 	Single,
@@ -78,7 +80,7 @@ struct FDoorStruct{
 	FRotator origin = FRotator();
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Opening Settings")
-	TObjectPtr<UStaticMeshComponent> meshDoor;
+	TObjectPtr &lt;UStaticMeshComponent&gt; meshDoor;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Opening Settings")
 	float rotation;
@@ -121,7 +123,7 @@ protected:
 	float lerpValue = 0;
 
 	// UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Opening Settings")
-	TArray<FDoorStruct> rotationPoints;
+	TArray &lt;FDoorStruct&gt; rotationPoints;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Opening Settings")
 	EDoorOpeningMode doorOpenMode = EDoorOpeningMode::Single;
@@ -139,10 +141,11 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-
 	void MoveDoors();
 
 	void MoveSingleDoor();
 
 };
-```
+
+    </code>
+</pre>

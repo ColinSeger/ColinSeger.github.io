@@ -1,4 +1,3 @@
-// const hljs = require('highlight.js');
 
 class Content {
   constructor(file_path, target, context, expanded_content, left_side) {
@@ -48,6 +47,15 @@ async function parse_and_apply_id(file_path, target) {
 
 async function load_defaults() {
   const content = [];
+  content.push(
+    new Content(
+      "ProjectSummary/project_liminal.md",
+      "Project Liminal",
+      "Game Project 4",
+      "ProjectPages/InBloom/InBloom.md",
+      "ProjectPages/InBloom/InBloomLeft.md",
+    ),
+  );
   content.push(
     new Content(
       "ProjectSummary/in_bloom.md",
@@ -134,3 +142,38 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//EXTERNAL MARKDOWN PARSER
+//EXTERNAL MARKDOWN PARSER
+//EXTERNAL MARKDOWN PARSER
+//EXTERNAL MARKDOWN PARSER
+//EXTERNAL MARKDOWN PARSER
+//EXTERNAL MARKDOWN PARSER
