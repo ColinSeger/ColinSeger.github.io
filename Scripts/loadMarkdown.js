@@ -18,7 +18,7 @@ function load_markdown_file(file_path, target) {
   markdownFiles.push(new Content(file_path, target, ""));
 }
 
-async function load_file(file_path){
+async function load_file(file_path) {
   const response = await fetch(file_path);
   if (!response.ok) {
     throw new Error("Network response was not ok");
@@ -27,7 +27,7 @@ async function load_file(file_path){
   return response.text();
 }
 
-async function parse_markdown_file(file_path){
+async function parse_markdown_file(file_path) {
   const file_contents = await load_file(file_path);
   const html = marked.parse(file_contents);
   if (typeof marked === "undefined") {
@@ -37,20 +37,44 @@ async function parse_markdown_file(file_path){
   return html;
 }
 
-async function parse_and_apply_id(file_path, target){
+async function parse_and_apply_id(file_path, target) {
   const html = parse_markdown_file(file_path);
-  html.then((response) =>{
+  html.then((response) => {
     document.getElementById(target).innerHTML = response;
-    hljs.highlightAll();
+    sessionStorage.setItem(target, response);
+    Prism.highlightAll();
   });
-  // hljs.highlightAll();
 }
 
-async function load_defaults(){
+async function load_defaults() {
   const content = [];
-  content.push(new Content("ProjectSummary/in_bloom.md", "In Bloom", "Game Project 3", 'ProjectPages/InBloom/InBloom.md', 'ProjectPages/InBloom/InBloomLeft.md'));
-  content.push(new Content("ProjectSummary/dark_descent.md", "Dark Descent", "Game Project 2", 'ProjectPages/DarkDescent/DarkDescent.md', 'ProjectPages/DarkDescent/DDLeft.md'));
-  content.push(new Content("ProjectSummary/grow_bot.md", "Grow Bot", "Game Project 1", 'ProjectPages/GrowBot/GrowBot.md', 'ProjectPages/GrowBot/GrowBotLeft.md'));
+  content.push(
+    new Content(
+      "ProjectSummary/in_bloom.md",
+      "In Bloom",
+      "Game Project 3",
+      "ProjectPages/InBloom/InBloom.md",
+      "ProjectPages/InBloom/InBloomLeft.md",
+    ),
+  );
+  content.push(
+    new Content(
+      "ProjectSummary/dark_descent.md",
+      "Dark Descent",
+      "Game Project 2",
+      "ProjectPages/DarkDescent/DarkDescent.md",
+      "ProjectPages/DarkDescent/DDLeft.md",
+    ),
+  );
+  content.push(
+    new Content(
+      "ProjectSummary/grow_bot.md",
+      "Grow Bot",
+      "Game Project 1",
+      "ProjectPages/GrowBot/GrowBot.md",
+      "ProjectPages/GrowBot/GrowBotLeft.md",
+    ),
+  );
 
   const right_container = document.getElementById("right_side");
   const left_container = document.getElementById("left_side");
@@ -61,37 +85,52 @@ async function load_defaults(){
 
   const template = document.getElementById("template_test");
 
-  for(const element of content){
-    const html = await parse_markdown_file(element.file_path);
+  for (const element of content) {
+    const html = parse_markdown_file(element.file_path);
     const cloned = template.content.cloneNode(true);
 
     const title = cloned.querySelector(".title");
     const context = cloned.querySelector(".context");
     const text = cloned.querySelector(".text");
-    const button = cloned.querySelector(".load_text");
+    //const button = cloned.querySelector(".load_text");
 
     title.innerHTML = element.title;
     context.innerHTML = element.context;
-    text.innerHTML = html;
-    button.addEventListener("click", parse_and_apply_id.bind(null, element.expanded_content, 'right_side'));
-    button.addEventListener("click", parse_and_apply_id.bind(null, element.left_side, 'left_side'));
+    text.innerHTML = await html;
+    // button.addEventListener(
+    //   "click",
+    //   parse_and_apply_id.bind(null, element.expanded_content, "right_side"),
+    // );
+    // button.addEventListener(
+    //   "click",
+    //   parse_and_apply_id.bind(null, element.left_side, "left_side"),
+    // );
 
     right_container.appendChild(cloned);
-    hljs.highlightAll();
-  };
-  document.getElementById('header').scrollIntoView();
+  }
+  document.getElementById("header").scrollIntoView();
+
+  sessionStorage.setItem("left_side", '0');
+  sessionStorage.setItem("right_side", '0');
   // load_markdown_file('/Description/description.md', "personal_descriptor");
 }
 
 // Ensure the DOM is fully loaded before executing the script
 document.addEventListener("DOMContentLoaded", (event) => {
   // Call the function with the path to your markdown file
-  // load_defaults();
+  if (sessionStorage.getItem("left_side") === '0' || !sessionStorage.getItem("left_side")) {
+    load_defaults();
+
+  } else {
+    document.getElementById("left_side").innerHTML = sessionStorage.getItem("left_side");
+    document.getElementById("right_side").innerHTML = sessionStorage.getItem("right_side");
+    Prism.highlightAll();
+  }
+
   markdownFiles.forEach((element) => {
     const html = parse_markdown_file(element.file_path);
     html.then((response) =>{
       document.getElementById(element.title).innerHTML = response;
     });
-    hljs.highlightAll();
   });
 });

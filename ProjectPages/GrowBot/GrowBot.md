@@ -30,7 +30,8 @@ In grow bot we only needed health for objects in the level since the only object
 was to destroy as many objects as possible. I therefore made this simple health system
 where you can damage things that are the same or lower tier than the attack
 
-```C#
+<pre>
+    <code class="language-csharp">
 
 [SerializeField]protected float maxHealth = 10f;
 [SerializeField]protected Tier thisTier = Tier.Small;
@@ -55,11 +56,11 @@ public Tier GetTier()
 
 public virtual void DealDamage(float damage, Tier tier)
 {
-    if(tier >= thisTier)
+    if(tier &gt= thisTier)
     {
         health -= damage; 
 
-        if(health <= 0)
+        if(health &lt= 0)
         {
             Death(returnRate, tier);
         }
@@ -70,7 +71,8 @@ public virtual void Death(AnimationCurve curve, Tier tier)
     Destroy(this.gameObject);
 }
 
-```
+</code>
+</pre>
 
 #### Structure Damage
 
@@ -80,7 +82,8 @@ Here is some of the code of how "Damageable" is used on objects.
 
 Some things are missing from this example since they show up later.
 
-```C#
+<pre>
+    <code class="language-csharp">
 /*This code is within a class inheriting from Damageable*/
 [SerializeField] int xpToGive;
 [SerializeField] private float _timeToGive;
@@ -131,10 +134,10 @@ public override void Death(AnimationCurve curve, Tier tier)
 private IEnumerator DeactivateAfterSound()
 {
     // Wait for the sound to finish playing if a death sound is assigned
-    Collider[] colliders = GetComponents<Collider>();
+    Collider[] colliders = GetComponents'<'Collider'>'();
     foreach (Collider collider in colliders)
     {
-        if (collider.gameObject.GetComponent<Rigidbody>() == null)
+        if (collider.gameObject.GetComponent'<'Rigidbody'>'() == null)
         {
             collider.enabled = false;
         }
@@ -151,7 +154,7 @@ IEnumerator DeathAnimation()
     float duration = 0.5f;
     float time = 0.0f;
 
-    while (time < duration)
+    while (time '<' duration)
     {
         time += Time.deltaTime;
         float t = Mathf.Clamp01(time / duration);
@@ -164,7 +167,8 @@ IEnumerator DeathAnimation()
     transform.localScale = Vector3.zero;
 }
 
-```
+</code>
+</pre>
 
 #### Peak Code
 
@@ -176,7 +180,8 @@ the animator for that and we also thought that but when we tried to use it we re
 with differently scaled objects. The fastest way I thought of solving this was this and I am fully aware 
 that the code could have been way better this code got the job done.
 
-```C#
+<pre>
+    <code class="language-csharp">
 
 IEnumerator Animated()
 {
@@ -189,7 +194,7 @@ IEnumerator Animated()
     float amount = 0.05f;
     
     // Scale down the object with a smooth transition
-    for (float i = 1; i > 0; i -= speed)
+    for (float i = 1; i '>' 0; i -= speed)
     {
         yield return new WaitForSeconds(0.001f);
         _damageLerp -= amount;
@@ -197,7 +202,7 @@ IEnumerator Animated()
     }
 
     // Scale back up to original size with a smooth transition
-    for (float i = 0; i < 1; i += speed)
+    for (float i = 0; i '<' 1; i += speed)
     {
         yield return new WaitForSeconds(0.001f);
         _damageLerp += amount;
@@ -205,7 +210,7 @@ IEnumerator Animated()
         //Debug.Log(_test);
     }
     // Scale down the object with a smooth transition
-    for (float i = 1; i > 0; i -= speed)
+    for (float i = 1; i '>' 0; i -= speed)
     {
         yield return new WaitForSeconds(0.001f);
         _damageLerp -= amount;
@@ -213,7 +218,7 @@ IEnumerator Animated()
     }
 
     // Scale back up to original size with a smooth transition
-    for (float i = 0; i < 1; i += speed)
+    for (float i = 0; i '<' 1; i += speed)
     {
         yield return new WaitForSeconds(0.001f);
         _damageLerp += amount;
@@ -221,7 +226,7 @@ IEnumerator Animated()
         //Debug.Log(_test);
     }
     // Scale down the object with a smooth transition
-    for (float i = 1; i > 0; i -= speed)
+    for (float i = 1; i '>' 0; i -= speed)
     {
         yield return new WaitForSeconds(0.001f);
         _damageLerp -= amount;
@@ -229,7 +234,7 @@ IEnumerator Animated()
     }
 
     // Scale back up to original size with a smooth transition
-    for (float i = 0; i < 1; i += speed)
+    for (float i = 0; i '<' 1; i += speed)
     {
         yield return new WaitForSeconds(0.001f);
         _damageLerp += amount;
@@ -239,4 +244,5 @@ IEnumerator Animated()
     yield return null;
 }
 
-```
+</code>
+</pre>

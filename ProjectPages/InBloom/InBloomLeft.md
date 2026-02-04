@@ -1,6 +1,8 @@
 
 <!--<a href="../index.html" class="back_button"> <thing class="redirect_button"> Go Back </thing></a>-->
-<button onclick="load_defaults()">Go Back</button>
+<button onclick="load_defaults()">
+  Go Back
+</button>
 
 <h2>In Bloom</h2>
 <br/>
@@ -13,5 +15,9 @@
     <li>Team of 19</li>
 </ul>
 
-<a href="https://futuregames.itch.io/in-bloom" class="icons" id="itch_io"> <thing class="redirect_button"> Try it out </thing></a>
-<a href="https://store.steampowered.com/app/4185520/In_Bloom_Prologue/" class="icons" id="steam"> <thing class="redirect_button"> Try it out </thing></a>
+<a href="https://futuregames.itch.io/in-bloom" class="icons" id="itch_io"> 
+  <thing class="redirect_button"> Try it out </thing>
+</a>
+<a href="https://store.steampowered.com/app/4185520/In_Bloom_Prologue/" class="icons" id="steam"> 
+    <thing class="redirect_button"> Try it out </thing>
+</a>

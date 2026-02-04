@@ -4,8 +4,14 @@
         <meta charset="UTF-8" meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="Styles/style.css">
         <link rel="stylesheet" href="Styles/project_style.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>-->
         <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css">
+
+        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-csharp.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-cpp.min.js"></script>
+
         <script src="Scripts/loadMarkdown.js"></script>
         <title>Colin Segerljung Portfolio</title>
     </head>
@@ -19,7 +25,7 @@
             <div  class="text">
                 If you see this it failed to load project file.
             </div>
-            <button onclick="" class="load_text">Read More</button>
+            <!--<button onclick="" class="load_text">Read More</button>-->
         </div>
     </template>
 
@@ -33,26 +39,9 @@
     <div id="main_container">
         <!-- Left Side Body -->
         <div class="left_side" id="left_side">
-            <!--<h2>Colin Segerljung</h2>
-            <br/>
-            <img src='/Images/PortfolioPictures/self_portrait.webp' alt="Image Failed to load" class="portfolio_picture"></img>
-            <br/>
-            <div class="picture_description_right", id="personal_descriptor">
-                <script>
-                    load_markdown_file('/Description/description.md', "personal_descriptor");
-                </script>
-            </div>-->
         </div>
-        <!--<script>
-            load_markdown_file('/Description/description.md', "personal_descriptor");
-        </script>-->
-        <!-- Right Side Body -->
         <div class="right_side", id="right_side">
             <h2>Highlighted Projects</h2>
-            
-            <script>
-                load_defaults();
-            </script>
         </div>
     </div>
 
@@ -77,7 +66,6 @@
                 <script>
                     load_markdown_file('/ProjectSummary/grow_bot.md', "grow_bot_text");
                 </script>
-                <a href="ProjectPages/GrowBot.html" class="redirect_button">Read More</a>
             </div>
 
             <!-- Project 2 -->
@@ -94,7 +82,6 @@
                 <script>
                     load_markdown_file('/ProjectSummary/dark_descent.md', "dark_descent");
                 </script>
-                <a href="ProjectPages/DarkDescent.html" class="redirect_button">Read More</a>
             </div>
 
             <div class="game_project_body">
@@ -112,7 +99,6 @@
                 <script>
                     load_markdown_file('/ProjectSummary/in_bloom.md', "in_bloom_text");
                 </script>
-                <a href="ProjectPages/InBloom.html" class="redirect_button">Read More</a>
             </div>
 
             <div class="game_project_body">
@@ -128,7 +114,6 @@
                 <script>
                     load_markdown_file('/ProjectSummary/yen_jai.md', "yen_jai_project");
                 </script>
-                <a href="ProjectPages/YenJai.html" class="redirect_button">Read More</a>
             </div>
 
             <div class="game_project_body">
@@ -144,7 +129,6 @@
                 <script>
                     load_markdown_file('/ProjectSummary/real_fps.md', "real_fps_project");
                 </script>
-                <a href="ProjectPages/RealFps.html" class="redirect_button">Read More</a>
             </div>
         </div>
     </div>

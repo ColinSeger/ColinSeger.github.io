@@ -43,8 +43,9 @@ I collaborated with artists programmers and designers in how to optimize our gam
 This is the code that is the base spell that you can use to create new spells to be added to
 the game
 
-```C#
-
+<pre>
+    <code class="language-csharp">
+    
 [SerializeField]AttackAreaType attackArea;
 
 [Header("Audio")]
@@ -61,10 +62,10 @@ protected bool first = true;
 protected ManaSystem manaSystem;
 public virtual bool Attack(){//Overide this function to call your spell
     float theTime = Time.time;
-    //if(cooldown > Time.time) cooldown = 0;
-    if((cooldown + baseCooldown) > theTime)return false;
+    //if(cooldown &gt Time.time) cooldown = 0;
+    if((cooldown + baseCooldown) &gt theTime)return false;
     if(!manaSystem){
-        manaSystem = FindFirstObjectByType<ManaSystem>();
+        manaSystem = FindFirstObjectByType&ltManaSystem&gt();
     }else{
         manaSystem.UseMana(manaCost);            
     }
@@ -73,10 +74,10 @@ public virtual bool Attack(){//Overide this function to call your spell
 protected bool CheckCooldown(){//Should only be called when trying to attack
     float theTime = Time.time;
     //Debug.Log("Cooldown "+ cooldown +" vs " + theTime);
-    //if(cooldown > Time.time) cooldown = 0;
-    if(!manaSystem) manaSystem = FindFirstObjectByType<ManaSystem>();
+    //if(cooldown &gt Time.time) cooldown = 0;
+    if(!manaSystem) manaSystem = FindFirstObjectByType&ltManaSystem&gt();
     if(manaSystem.CurrentMana <= 0) return false;
-    if((cooldown + baseCooldown) > theTime){
+    if((cooldown + baseCooldown) &gt theTime){
         return false;
     }
     cooldown = theTime;
@@ -131,9 +132,9 @@ public void ResetThis(){
     cooldown = -baseCooldown;
     first = true;
 }
-
-```
-
+    </code>
+</pre>
+<!--CODE-->
 #### Spell Caster
 Here is the code for how the spells where selected and then casted.
 
@@ -144,14 +145,16 @@ I made some poor decisions on how to use it.
 Nowadays I would not have the input be registered in the update loop and instead just tie it to
 the input event
 
-```C#
+<pre>
+    <code class="language-csharp">
+    
 
-public Action<int> spellIndex;
-public Action<int, float> spellCooldown;
-[SerializeField]List<BaseSpells> castingCombo = new List<BaseSpells>(3);
-[SerializeField]List<SkillsBase> spells = new List<SkillsBase>();
+public Action&lt;int&gt; spellIndex;
+public Action&lt;int, float&gt; spellCooldown;
+[SerializeField]List&lt;BaseSpells&gt; castingCombo = new List&lt;BaseSpells&gt;(3);
+[SerializeField]List&lt;SkillsBase&gt spells = new List&lt;SkillsBase&gt;();
 [SerializeField]Transform castLocation;
-[SerializeField]List<BaseSpells> lockedSpells = new List<BaseSpells>(3);
+[SerializeField]List&lt;BaseSpells&gt; lockedSpells = new List&lt;BaseSpells&gt;(3);
 [SerializeField]Animator animator;
 #region Controls
 //private InputSystem_Actions inputActions;
@@ -177,7 +180,7 @@ void Update()
 {
     if (Time.timeScale == 0f) return;
 
-    if (castingCombo.Count > 3){
+    if (castingCombo.Count &gt 3){
         castingCombo.Remove(BaseSpells.Empty);
     }
     #if UNITY_ANDROID
@@ -196,7 +199,7 @@ void Update()
     
 }
 void CastSpell(){
-    for (int i = castingCombo.Count; i < 3; i++)
+    for (int i = castingCombo.Count; i &gt; 3; i++)
     {
         castingCombo.Add(BaseSpells.Empty);
     }
@@ -233,7 +236,7 @@ void AddSpell(BaseSpells spell){//Add spell to casting combo
     }
     spellIndex?.Invoke(SpellsValue());
 }
-public List<BaseSpells> GetCombo(){//Retrieve casting combo
+public List&gt;BaseSpells&gt GetCombo(){//Retrieve casting combo
     return castingCombo;
 }
 int SpellsValue(){//Calculates the value of selected spells and should be unique
@@ -241,7 +244,7 @@ int SpellsValue(){//Calculates the value of selected spells and should be unique
     int added = -1;
     foreach(BaseSpells spell in castingCombo){
         result += (int)spell;
-        if((int)spell > 0){
+        if((int)spell &gt 0){
             added+=1;
         }
     }
@@ -255,4 +258,5 @@ public void RemoveLockedSpell(BaseSpells spell){
     if(!lockedSpells.Contains(spell)) return;
     lockedSpells.Remove(spell);
 }
-```
+</code>
+</pre>
