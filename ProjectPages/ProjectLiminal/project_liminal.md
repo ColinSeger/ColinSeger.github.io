@@ -1,7 +1,7 @@
 # Coming Soon
 
 ## Trailer
-<iframe width="560" height="315" 
+<iframe 
     src="https://www.youtube-nocookie.com/embed/n-CLQhPSjEc?si=xzWejycV9njthC4K" 
     title="Project Liminal" 
     frameborder="0" 

@@ -136,6 +136,12 @@ h4 {
     margin-bottom: 0;
 }
 
+iframe{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+
 .navigation_button {
     display: flex;
     align-self: center;
