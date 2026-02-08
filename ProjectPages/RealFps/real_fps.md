@@ -10,7 +10,7 @@ raises the frame rate cap by 10.
 - Play within your abilities
 - 
 
-#### Systems I worked on
+#### Things I worked on
 - Graphics Settings
-- 
-- 
+- Sang Part Of Main Theme
+- Made The LODS

@@ -18,15 +18,17 @@
         <title>Colin Segerljung Portfolio</title>
     </head>
 
-    <template id="template_test">
+    <template id="highlighted_project_template">
         <div class="right_side_containers">
-            <div>
+            <div class="fill_test">
                 <h3 class="title">Title Failed To Load</h3>
                 <h5 class="context">Context Failed To Load</h5>
             </div>
+            <img src="Images/OptimizedPosters/ProjectLiminal.webp" class="project_poster" alt="Poster">
             <div  class="text">
                 If you see this it failed to load project file.
             </div>
+
             <!--<button onclick="" class="load_text">Read More</button>-->
         </div>
     </template>
@@ -60,7 +62,7 @@
 
                 <div class="project_picture" id="grow_bot_image"></div>
 
-                <div id="grow_bot_text">
+                <div id="grow_bot_text" class="text">
                     If you see this it failed to load text.
                 </div>
 
@@ -77,7 +79,7 @@
                     <h5>Game-Project: 2</h5>
                 </div>
                 <div class="project_picture" id="dark_descent_image"></div>
-                <div id="dark_descent">
+                <div id="dark_descent" class="text">
                     If you see this it failed to load text.
                 </div>
 
@@ -95,7 +97,7 @@
 
                 <div class="project_picture" id="in_bloom_image"></div>
 
-                <div id="in_bloom_text">
+                <div id="in_bloom_text" class="text">
                     If you see this it failed to load text.
                 </div>
                 <script>
@@ -113,7 +115,7 @@
 
                 <div class="project_picture" id="project_liminal"></div>
 
-                <div id="liminal_text">
+                <div id="liminal_text" class="text">
                     If you see this it failed to load text.
                 </div>
                 <script>
@@ -128,7 +130,7 @@
                 </div>
                 <div class="project_picture" id="yen_jai_image"></div>
 
-                <div id="yen_jai_project">
+                <div id="yen_jai_project" class="text">
                     If you see this it failed to load text.
                 </div>
                 <script>
@@ -143,11 +145,26 @@
                 </div>
                 <div class="project_picture" id="real_fps_image"></div>
 
-                <div id="real_fps_project">
+                <div id="real_fps_project" class="text">
                     If you see this it failed to load text.
                 </div>
                 <script>
                     load_markdown_file('/ProjectSummary/real_fps.md', "real_fps_project");
+                </script>
+            </div>
+
+            <div class="game_project_body">
+                <div>
+                    <h2 class="project_header" id="real_fps_goto">Osten Engine</h2>
+                    <h5>Engine Course</h5>
+                </div>
+                <div class="project_picture" id="project_liminal"></div>
+
+                <div id="osten_project" class="text">
+                    If you see this it failed to load text.
+                </div>
+                <script>
+                    load_markdown_file('/ProjectSummary/osten_engine.md', "osten_project");
                 </script>
             </div>
         </div>

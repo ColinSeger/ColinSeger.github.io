@@ -11,7 +11,7 @@
 <ul>
     <li>4 Weeks</li>
     <li>Made in Unreal</li>
-    <li>Team of 10</li>
+    <li>Team of 8</li>
 </ul>
 
 <a href="https://futuregames.itch.io/projectliminal" class="icons" id="itch_io">

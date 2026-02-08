@@ -1,11 +1,10 @@
 
 class Content {
-  constructor(file_path, target, context, expanded_content, left_side) {
+  constructor(file_path, target, context, poster) {
     this.file_path = file_path;
     this.title = target;
     this.context = context;
-    this.expanded_content = expanded_content;
-    this.left_side = left_side;
+    this.poster = poster;
   }
 }
 
@@ -52,8 +51,7 @@ async function load_defaults() {
       "ProjectSummary/project_liminal.md",
       "Project Liminal",
       "Game Project 4",
-      "ProjectPages/InBloom/InBloom.md",
-      "ProjectPages/InBloom/InBloomLeft.md",
+      "Images/OptimizedPosters/ProjectLiminal.webp"
     ),
   );
   content.push(
@@ -61,8 +59,7 @@ async function load_defaults() {
       "ProjectSummary/in_bloom.md",
       "In Bloom",
       "Game Project 3",
-      "ProjectPages/InBloom/InBloom.md",
-      "ProjectPages/InBloom/InBloomLeft.md",
+      "Images/OptimizedPosters/in_bloom.webp"
     ),
   );
   content.push(
@@ -70,8 +67,7 @@ async function load_defaults() {
       "ProjectSummary/dark_descent.md",
       "Dark Descent",
       "Game Project 2",
-      "ProjectPages/DarkDescent/DarkDescent.md",
-      "ProjectPages/DarkDescent/DDLeft.md",
+      "Images/OptimizedPosters/dark_descent_poster.webp"
     ),
   );
   content.push(
@@ -79,8 +75,7 @@ async function load_defaults() {
       "ProjectSummary/grow_bot.md",
       "Grow Bot",
       "Game Project 1",
-      "ProjectPages/GrowBot/GrowBot.md",
-      "ProjectPages/GrowBot/GrowBotLeft.md",
+      "Images/OptimizedPosters/Growbot_Poster.webp"
     ),
   );
 
@@ -91,7 +86,7 @@ async function load_defaults() {
   const left = await parse_markdown_file("Description/description.md");
   left_container.innerHTML = left;
 
-  const template = document.getElementById("template_test");
+  const template = document.getElementById("highlighted_project_template");
 
   for (const element of content) {
     const html = parse_markdown_file(element.file_path);
@@ -100,10 +95,12 @@ async function load_defaults() {
     const title = cloned.querySelector(".title");
     const context = cloned.querySelector(".context");
     const text = cloned.querySelector(".text");
-    //const button = cloned.querySelector(".load_text");
+    const poster = cloned.querySelector(".project_poster");
+
 
     title.innerHTML = element.title;
     context.innerHTML = element.context;
+    poster.src = element.poster;
     text.innerHTML = await html;
     // button.addEventListener(
     //   "click",

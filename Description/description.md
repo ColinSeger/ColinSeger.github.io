@@ -2,7 +2,7 @@
 <h2>Colin Segerljung</h2>
 
 <br/>
-<img src='/Images/PortfolioPictures/self_portrait.webp' alt="Image Failed to load" class="portfolio_picture"></img>
+<img src='Images/PortfolioPictures/portfolio_temp2.webp' alt="Image Failed to load" class="portfolio_picture"></img>
 <br/>
 <div class="picture_description_right", id="personal_descriptor">
 

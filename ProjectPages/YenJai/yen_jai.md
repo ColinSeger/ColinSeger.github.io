@@ -18,7 +18,9 @@ that can come in shot their patterns and then leaves after performing their move
 #### Spawning
 Instantiatied the enemy prefab and added it to the enemy manager that had references to all enemies
 
-``` C#
+<pre>
+    <code class="language-csharp">
+    
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
@@ -56,7 +58,7 @@ public class Enemy
     [SerializeField] IdleAnimation idleAnimation = new IdleAnimation();
     [HideInInspector] public Vector3 location;
     [HideInInspector] public Vector3 offset;
-    [SerializeReference] public List<BaseShootingStats> shootingStats;
+    [SerializeReference] public List'<'BaseShootingStats'>' shootingStats;
     [SerializeField] public ShootMode modeToAdd;
     [InspectorButton("AddShootBehavior")]
     public bool AddShootMode;
@@ -72,7 +74,7 @@ public class Enemy
             }
             else
             {
-                shootingStats = enemyPrefab.GetComponent<EnemyBehaviourList>().ShootingStats;
+                shootingStats = enemyPrefab.GetComponent'<'EnemyBehaviourList'>'().ShootingStats;
                 enemyBehaviorList.ApplyBehavior(shootingStats);
             }
             return enemyBehaviorList;
@@ -83,7 +85,7 @@ public class Enemy
     public void MoveInOut()
     {
         movement.IdleAnimation = idleAnimation;
-        if (enemyPrefab.TryGetComponent<EnemyBehaviourList>(out enemyBehaviorList))
+        if (enemyPrefab.TryGetComponent'<'EnemyBehaviourList'>'(out enemyBehaviorList))
         {
             enemyBehaviorList.DisableTasks();
             if (shootingStats.Count >= 1)
@@ -183,4 +185,5 @@ public class Enemy
     }
 }
 
-```
+    </code>
+</pre>

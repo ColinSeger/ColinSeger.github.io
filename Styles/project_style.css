@@ -22,7 +22,9 @@
 
 .project_grid{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: calc(25% - 1dvh) calc(25% - 1dvh) calc(25% - 1dvh) calc(25%);
+    gap: 1dvh;
+    margin: 1dvh;
 
     @media (orientation: portrait) {
         margin-top: 0;

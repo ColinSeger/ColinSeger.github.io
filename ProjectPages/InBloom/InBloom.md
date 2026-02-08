@@ -1,6 +1,12 @@
+## Trailer
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qm8phg69Ut4?si=pA8a3J94uMRAFBRL&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## What is In Bloom
 
 In Bloom was intended to be a survival horror game where nature has taken over
+
+
 
 ## My Experience
 
@@ -18,6 +24,7 @@ Unreal had some issues when we were using it, like a example would be how when P
 Unreal would also freeze until Perforce was back, though that is more of a Perforce issue than a Unreal one.
 The issues we encountered with Unreal was mostly that it was not really that intuitive, like 
 why is it (x, y, z) but also (x, z, y) when going from C++ to blueprints
+
 
 ### My Takeaways
 - Reinforced that communication is key

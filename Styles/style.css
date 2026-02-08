@@ -227,9 +227,10 @@ h4 {
 }
 
 .right_side_containers {
-    /*display: grid;
-    grid-template-columns: 50%, 50%;
-    row-gap: 1dvh;*/
+    display: grid;
+    grid-template-columns: 15dvh calc(100% - 15dvh);
+    align-content: space-between;
+    column-gap: 1dvh;
 
     height: fit-content;
     padding: 1dvh;
@@ -241,6 +242,41 @@ h4 {
 
     border-color: var(--object_color);
     background-color: var(--container_color);
+
+    @media (orientation: portrait) {
+        align-self: center;
+        justify-self: center;
+        rid-template-columns: 100%;
+    }
+}
+
+.fill_test{
+    grid-column: 1 / -1;
+
+    /*@media (orientation: portrait) {
+        align-self: center;
+        justify-self: center;
+    }*/
+}
+.text{
+    display: grid;
+    grid-template-rows: 1fr auto;
+
+    @media (orientation: portrait) {
+        grid-column: 1 / -1;
+        align-self: center;
+        justify-self: center;
+    }
+}
+
+.project_poster{
+    max-width: 100%;
+    @media (orientation: portrait) {
+        grid-column: 1 / -1;
+        align-self: center;
+        justify-self: center;
+    }
+    /*max-height: 20dvh;*/
 }
 
 .portfolio_picture {
