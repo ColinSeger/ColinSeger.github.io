@@ -11,7 +11,8 @@ Whenever you clear a level you gain frames at the cost of lower graphics.
 
 <button onclick="
     parse_and_apply_id('ProjectPages/RealFps/real_fps.md', 'right_side')
-    parse_and_apply_id('ProjectPages/RealFps/real_fps_left.md', 'left_side')
+    parse_and_apply_id('ProjectPages/RealFps/real_fps_left.html', 'left_side')
+    window.history.pushState({ page: 1 }, '', '')
     document.getElementById('header').scrollIntoView()
     " 
     class="load_text">

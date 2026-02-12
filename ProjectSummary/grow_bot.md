@@ -8,7 +8,8 @@ It being the first game I was part of you might expect it to have been the worst
 
 <button onclick="
     parse_and_apply_id('ProjectPages/GrowBot/GrowBot.md', 'right_side')
-    parse_and_apply_id('ProjectPages/GrowBot/GrowBotLeft.md', 'left_side')
+    parse_and_apply_id('ProjectPages/GrowBot/GrowBotLeft.html', 'left_side')
+    window.history.pushState({ page: 1 }, '', '')
     document.getElementById('header').scrollIntoView()
     " 
     class="load_text">

@@ -8,11 +8,10 @@ The game was made in **UE5** by a team of 8 people
 
 </div>
 
-<!--![Tux, the Linux mascot](Images/OptimizedPosters/ProjectLiminal.webp)-->
-
 <button onclick="
     parse_and_apply_id('ProjectPages/ProjectLiminal/project_liminal.md', 'right_side')
-    parse_and_apply_id('ProjectPages/ProjectLiminal/project_liminal_left.md', 'left_side')
+    parse_and_apply_id('ProjectPages/ProjectLiminal/project_liminal_left.html', 'left_side')
+    window.history.pushState({ page: 1 }, '', '')
     document.getElementById('header').scrollIntoView()
     " 
     class="load_text"> Read More </button>

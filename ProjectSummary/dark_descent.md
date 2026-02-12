@@ -13,7 +13,8 @@ I had fun making this project even thought the issues we faced.
 
 <button onclick="
     parse_and_apply_id('ProjectPages/DarkDescent/DarkDescent.md', 'right_side')
-    parse_and_apply_id('ProjectPages/DarkDescent/DDLeft.md', 'left_side')
+    parse_and_apply_id('ProjectPages/DarkDescent/DDLeft.html', 'left_side')
+    window.history.pushState({ page: 1 }, '', '')
     document.getElementById('header').scrollIntoView()
     " 
     class="load_text">

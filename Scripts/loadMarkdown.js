@@ -83,7 +83,7 @@ async function load_defaults() {
   const left_container = document.getElementById("left_side");
   right_container.innerHTML = "<h2>Highlighted Projects</h2>";
 
-  const left = await parse_markdown_file("Description/description.md");
+  const left = await parse_markdown_file("Description/description.html");
   left_container.innerHTML = left;
 
   const template = document.getElementById("highlighted_project_template");
@@ -109,7 +109,7 @@ async function load_defaults() {
 
   sessionStorage.setItem("left_side", '0');
   sessionStorage.setItem("right_side", '0');
-  // load_markdown_file('/Description/description.md', "personal_descriptor");
+
 }
 
 // Ensure the DOM is fully loaded before executing the script
@@ -131,7 +131,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
   });
 });
+// Push a dummy state when page loads
+window.history.pushState({ page: 1 }, "", "");
 
+// Listen for back button
+window.addEventListener("popstate", function (event) {
+    // Call your function
+    load_defaults();
+});
 
 
 

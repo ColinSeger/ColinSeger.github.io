@@ -10,7 +10,8 @@ I struggled a bit in this project due to having a hard time reaching my teammate
 
 <button onclick="
     parse_and_apply_id('ProjectPages/InBloom/InBloom.md', 'right_side')
-    parse_and_apply_id('ProjectPages/InBloom/InBloomLeft.md', 'left_side')
+    parse_and_apply_id('ProjectPages/InBloom/InBloomLeft.html', 'left_side')
+    window.history.pushState({ page: 1 }, '', '')
     document.getElementById('header').scrollIntoView()
     " 
     class="load_text">
