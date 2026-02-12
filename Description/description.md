@@ -1,5 +1,7 @@
 
-<h2>Colin Segerljung</h2>
+<h2>
+  Colin Segerljung
+</h2>
 
 <br/>
 <img src='Images/PortfolioPictures/portfolio_temp2.webp' alt="Image Failed to load" class="portfolio_picture"></img>

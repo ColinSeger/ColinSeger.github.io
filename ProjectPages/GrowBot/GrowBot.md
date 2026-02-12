@@ -1,12 +1,9 @@
+# GrowBot
+
 ## Trailer
-<iframe 
-    src="https://www.youtube-nocookie.com/embed/VZvEXoyRksw?si=5fjv_qBFSqAuryBM" 
-    title="GrowBot" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen>
-</iframe>
+<video controls>
+    <source src="videos/grow_bot.mp4" type="video/mp4">
+</video>
 
 ## What is GrowBot
 

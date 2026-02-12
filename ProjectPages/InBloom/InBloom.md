@@ -1,19 +1,14 @@
+# In Bloom
+
 ## Trailer
 
-<iframe 
-    src="https://www.youtube.com/embed/qm8phg69Ut4?si=pA8a3J94uMRAFBRL&amp;controls=0" 
-    title="YouTube video player" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    referrerpolicy="strict-origin-when-cross-origin" 
-    allowfullscreen>
-</iframe>
+<video controls>
+    <source src="videos/in_bloom.mp4" type="video/mp4">
+</video>
 
 ## What is In Bloom
 
 In Bloom was intended to be a survival horror game where nature has taken over
-
-
 
 ## My Experience
 

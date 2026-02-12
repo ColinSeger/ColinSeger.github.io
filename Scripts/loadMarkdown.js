@@ -102,14 +102,6 @@ async function load_defaults() {
     context.innerHTML = element.context;
     poster.src = element.poster;
     text.innerHTML = await html;
-    // button.addEventListener(
-    //   "click",
-    //   parse_and_apply_id.bind(null, element.expanded_content, "right_side"),
-    // );
-    // button.addEventListener(
-    //   "click",
-    //   parse_and_apply_id.bind(null, element.left_side, "left_side"),
-    // );
 
     right_container.appendChild(cloned);
   }
