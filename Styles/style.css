@@ -145,7 +145,6 @@ video{
     width: 100%;
     aspect-ratio: 16 / 9;
 }
-
 .navigation_button {
     display: flex;
     align-self: center;
@@ -238,7 +237,7 @@ video{
 
 .right_side_containers {
     display: grid;
-    grid-template-columns: 15dvh calc(100% - 15dvh);
+    grid-template-columns: 18dvh calc(100% - 18dvh);
     align-content: space-between;
     column-gap: 1dvh;
 
@@ -286,6 +285,7 @@ video{
         align-self: center;
         justify-self: center;
     }
+    border-radius: var(--border_radius);
     /*max-height: 20dvh;*/
 }
 
@@ -340,19 +340,24 @@ video{
     text-decoration: none;
 }
 
+.contacts{
+    display: grid;
+    grid-template-columns: 4dvh 4dvh;
+    gap: 1dvh;
+    /*height: fit-content;*/
+    width: 100%;
+}
+
 .icons {
     box-sizing: border-box;
-    float: left;
     width: 100%;
-    height: 20px;
-    padding-left: 25px;
-    margin: 5px;
-    margin-bottom: 10px;
     text-decoration: none;
-    @media (orientation: portrait) {
-        float: none;
-        width: auto;
-    }
+    border-radius: var(--border_radius);
+}
+
+.icons:hover{
+    color: var(--container_color);
+    background-color: var(--object_color);
 }
 
 #linkedin {

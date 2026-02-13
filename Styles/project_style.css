@@ -39,7 +39,8 @@
 .project_picture{
     /* Formatting */
     float: left;
-    height: auto;
+    width: 100%;
+    /*height: auto;*/
 
     /* Corners */
     border-radius: var(--border_radius);
@@ -49,7 +50,7 @@
     /* Formatting */
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 90px 30rem auto;
+    grid-template-rows: 90px auto auto;
 
     padding: 1dvh;
     margin: calc(1% - 2px);
@@ -82,13 +83,16 @@
     overflow-x: scroll;
     overflow-y: scroll;
     max-width: 100%;
+    border-radius: var(--border_radius);
 }
 .image_comparison{
     display: grid;
     grid-template-columns: 50% 50%;
+
 }
 .game_image{
     max-width: 100%;
+    /*border-radius: var(--border_radius);*/
 }
 
 .redirect_button{
@@ -111,55 +115,4 @@
         color: var(--container_color);
         background-color: var(--back_color);
     }
-}
-#grow_bot_image{
-    height: var(--picture_size);
-    max-width: 100%;
-    width: 100%;
-    background-image: url('/Images/OptimizedPosters/Growbot_Poster.webp');
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-#dark_descent_image{
-    height: var(--picture_size);
-    max-width: 100%;
-    width: 100%;
-    background-image: url('/Images/OptimizedPosters/dark_descent_poster.webp');
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-#in_bloom_image{
-    height: var(--picture_size);
-    max-width: 100%;
-    width: 100%;
-    background-image: url('/Images/OptimizedPosters/in_bloom.webp');
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-#yen_jai_image{
-    height: var(--picture_size);
-    max-width: 100%;
-    width: 100%;
-    background-image: url('/Images/LegacyImages/Boster.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-#real_fps_image{
-    height: var(--picture_size);
-    max-width: 100%;
-    width: 100%;
-    background-image: url('/Images/LegacyImages/Real_Fps.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-#project_liminal{
-    height: var(--picture_size);
-    max-width: 100%;
-    width: 100%;
-    background-image: url('/Images/OptimizedPosters/ProjectLiminal.webp');
-    background-repeat: no-repeat;
-    background-size: contain;
 }

@@ -19,7 +19,7 @@ function load_markdown_file(file_path, target) {
 async function load_file(file_path) {
   const response = await fetch(file_path);
   if (!response.ok) {
-    throw new Error("Network response was not ok");
+    throw new Error("Failed to load file");
     // return "Network response was not ok";
   }
   return response.text();
@@ -44,11 +44,26 @@ async function parse_and_apply_id(file_path, target) {
   });
 }
 
+async function parse_html_and_apply_id(file_path, target) {
+  const file = await fetch(file_path);
+
+  if (!file.ok) {
+    document.getElementById(target).innerHTML = "Failed to load text";
+    return;
+  }
+
+  const html = await file.text();
+
+  document.getElementById(target).innerHTML = html;
+  sessionStorage.setItem(target, html);
+  Prism.highlightAll();
+}
+
 async function load_defaults() {
   const content = [];
   content.push(
     new Content(
-      "ProjectSummary/project_liminal.md",
+      "ProjectSummary/project_liminal.html",
       "Project Liminal",
       "Game Project 4",
       "Images/OptimizedPosters/ProjectLiminal.webp"
@@ -56,7 +71,7 @@ async function load_defaults() {
   );
   content.push(
     new Content(
-      "ProjectSummary/in_bloom.md",
+      "ProjectSummary/in_bloom.html",
       "In Bloom",
       "Game Project 3",
       "Images/OptimizedPosters/in_bloom.webp"
@@ -64,7 +79,7 @@ async function load_defaults() {
   );
   content.push(
     new Content(
-      "ProjectSummary/dark_descent.md",
+      "ProjectSummary/dark_descent.html",
       "Dark Descent",
       "Game Project 2",
       "Images/OptimizedPosters/dark_descent_poster.webp"
@@ -72,7 +87,7 @@ async function load_defaults() {
   );
   content.push(
     new Content(
-      "ProjectSummary/grow_bot.md",
+      "ProjectSummary/grow_bot.html",
       "Grow Bot",
       "Game Project 1",
       "Images/OptimizedPosters/Growbot_Poster.webp"
@@ -83,7 +98,7 @@ async function load_defaults() {
   const left_container = document.getElementById("left_side");
   right_container.innerHTML = "<h2>Highlighted Projects</h2>";
 
-  const left = await parse_markdown_file("Description/description.html");
+  const left = await load_file("Description/description.html");
   left_container.innerHTML = left;
 
   const template = document.getElementById("highlighted_project_template");

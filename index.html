@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="Styles/project_style.css">
         <link rel="stylesheet"  href="Styles/prism-style.css">
 
-        <script src="Scripts/additionalFunctions.js"></script>
+        <script src="Scripts/additional_functions.js"></script>
         <!--<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>-->
 
         <script>
@@ -14,7 +14,7 @@
           "https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/";
         </script>
 
-        <script src="Scripts/loadMarkdown.js"></script>
+        <script src="Scripts/scripts.js"></script>
         <title>Colin Segerljung Portfolio</title>
     </head>
 
@@ -51,16 +51,16 @@
 
     <!-- Project Container -->
     <div class="project_container" id="projects">
-        <h1 style="margin-left: 1vw;">Projects</h1>
+        <h1 style='margin-left: 1vw;'>Other Projects</h1>
         <div class="project_grid">
             <!-- Project 1 -->
-            <div class="game_project_body" id="grow_bot">
+            <div class="game_project_body" id="grow_bot" style="display: none;">
                 <div>
                    <h2 class="project_header">Grow Bot</h2>
                     <h5>Game-Project: 1</h5>
                 </div>
 
-                <div class="project_picture" id="grow_bot_image"></div>
+                <img src="/Images/OptimizedPosters/Growbot_Poster.webp" class="project_picture">
 
                 <div id="grow_bot_text" class="text">
                     If you see this it failed to load text.
@@ -68,58 +68,60 @@
 
                 <!-- Loading the text -->
                 <script>
-                    load_markdown_file('/ProjectSummary/grow_bot.md', "grow_bot_text");
+                    load_markdown_file('/ProjectSummary/grow_bot.html', "grow_bot_text");
                 </script>
             </div>
 
             <!-- Project 2 -->
-            <div class="game_project_body">
+            <div class="game_project_body" style="display: none;">
                 <div>
                     <h2 class="project_header">Dark Descent</h2>
                     <h5>Game-Project: 2</h5>
                 </div>
-                <div class="project_picture" id="dark_descent_image"></div>
+
+                <img src="/Images/OptimizedPosters/dark_descent_poster.webp" class="project_picture">
+
                 <div id="dark_descent" class="text">
                     If you see this it failed to load text.
                 </div>
 
                 <script>
-                    load_markdown_file('/ProjectSummary/dark_descent.md', "dark_descent");
+                    load_markdown_file('/ProjectSummary/dark_descent.html', "dark_descent");
                 </script>
             </div>
 
             <!-- Project 3-->
-            <div class="game_project_body">
+            <div class="game_project_body" style="display: none;">
                 <div>
                     <h2 class="project_header">In Bloom</h2>
                     <h5>Game-Project: 3</h5>
                 </div>
 
-                <div class="project_picture" id="in_bloom_image"></div>
+                <img src="/Images/OptimizedPosters/in_bloom.webp" class="project_picture">
 
                 <div id="in_bloom_text" class="text">
                     If you see this it failed to load text.
                 </div>
                 <script>
-                    load_markdown_file('/ProjectSummary/in_bloom.md', "in_bloom_text");
+                    load_markdown_file('/ProjectSummary/in_bloom.html', "in_bloom_text");
                 </script>
             </div>
 
             <!-- Project 4 -->
 
-            <div class="game_project_body">
+            <div class="game_project_body" style="display: none;">
                 <div>
                     <h2 class="project_header">Project Liminal</h2>
                     <h5>Game-Project: 4</h5>
                 </div>
 
-                <div class="project_picture" id="project_liminal"></div>
+                <img src="/Images/OptimizedPosters/ProjectLiminal.webp" class="project_picture">
 
                 <div id="liminal_text" class="text">
                     If you see this it failed to load text.
                 </div>
                 <script>
-                    load_markdown_file('/ProjectSummary/project_liminal.md', "liminal_text");
+                    load_markdown_file('/ProjectSummary/project_liminal.html', "liminal_text");
                 </script>
             </div>
 
@@ -128,7 +130,7 @@
                     <h2 class="project_header" id="yen_jai_goto">Yen Jai</h2>
                     <h5>Summer Project</h5>
                 </div>
-                <div class="project_picture" id="yen_jai_image"></div>
+                <img src="/Images/LegacyImages/Boster.jpg" class="project_picture">
 
                 <div id="yen_jai_project" class="text">
                     If you see this it failed to load text.
@@ -143,13 +145,14 @@
                     <h2 class="project_header" id="real_fps_goto">Real Fps</h2>
                     <h5>Game Jam</h5>
                 </div>
-                <div class="project_picture" id="real_fps_image"></div>
+
+                <img src="/Images/LegacyImages/Real_Fps.png" class="project_picture">
 
                 <div id="real_fps_project" class="text">
                     If you see this it failed to load text.
                 </div>
                 <script>
-                    load_markdown_file('/ProjectSummary/real_fps.md', "real_fps_project");
+                    load_markdown_file('/ProjectSummary/real_fps.html', "real_fps_project");
                 </script>
             </div>
 
@@ -158,7 +161,8 @@
                     <h2 class="project_header" id="osten_goto">Osten Engine</h2>
                     <h5>Engine Course</h5>
                 </div>
-                <div class="project_picture" id="project_liminal"></div>
+
+                <img src="/Images/OptimizedPosters/ProjectLiminal.webp" class="project_picture">
 
                 <div id="osten_project" class="text">
                     If you see this it failed to load text.
@@ -173,7 +177,8 @@
 
     <footer>
         <h3>Thanks for checking my Portfolio</h3>
-        <h3>Colin Segerljung</h3>
+        <!--<h3>Colin Segerljung</h3>-->
+        <h4>Made By Colin Segerljung</h4>
     </footer>
 </body>
 </html>
