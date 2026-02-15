@@ -36,14 +36,32 @@
     width: 100%;
 }
 
+.image_section{
+    object-fit: contain;
+    overflow: hidden;
+}
+
 .project_picture{
     /* Formatting */
-    float: left;
-    width: 100%;
-    /*height: auto;*/
+    max-width: 100%;
+    max-height: 100%;
+
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: 100%;
+
+    /* Internal */
+    object-fit: contain;
+    box-sizing: border-box;
 
     /* Corners */
     border-radius: var(--border_radius);
+
+    @media (orientation: portrait) {
+        width: 100%;
+        max-height: 100%;
+    }
 }
 
 .game_project_body{
