@@ -9,7 +9,7 @@
     /* Scroll Settings */
     overflow-x: visible;
     overflow-y: visible;
-    scrollbar-color: var(--container_color) var(--object_color);
+    scrollbar-color: var(--object_color) var(--container_color) ;
     scrollbar-width: thin;
 
     --picture_size: 30rem;
@@ -72,7 +72,7 @@ body {
     /* Scroll Settings */
     overflow-x: visible;
     overflow-y: visible;
-    scrollbar-color: var(--container_color) var(--object_color);
+    scrollbar-color: var(--object_color) var(--container_color);
     scrollbar-width: thin;
 
     font-family: sans-serif;
@@ -97,20 +97,35 @@ footer {
 a {
     text-decoration: none;
     /*height: 100rem;*/
+    /*background-color: var(--back_color);*/
+    border-radius: var(--border_radius);
+    border-width: 2px;
+    border-color: var(--container_color);
+    border-style: solid;
+    padding: 2px;
+    margin: 0;
+
+    min-width: 30px;
+    min-height: 30px;
+}
+
+a:hover{
+    color: var(--container_color);
+    background-color: var(--object_color);
 }
 
 button{
     height: fit-content;
     /* text-decoration: none; */
     border: 0;
-
-    padding: 4px;
+    padding: 8px;
     border-radius: var(--border_radius);
+    font-size: 1rem;
 
     background-color: var(--object_color);
 
     color: var(--another_color);
-    width: 5.5rem;
+    width: 8rem;
 }
 
 button:hover{
@@ -144,6 +159,11 @@ iframe{
 video{
     width: 100%;
     aspect-ratio: 16 / 9;
+}
+
+pre{
+    max-height: 80dvh;
+    overflow-y: scroll;
 }
 .navigation_button {
     display: flex;
@@ -345,7 +365,7 @@ video{
 
 .contacts{
     display: grid;
-    grid-template-columns: 4dvh 4dvh;
+    grid-template-columns: 3.5dvw 3.5dvw;
     gap: 1dvh;
     /*height: fit-content;*/
     width: 100%;
@@ -357,9 +377,10 @@ video{
     width: 100%;
     text-decoration: none;
     border-radius: var(--border_radius);
+    margin: 0;
 }
 
-.icons:hover{
+.icosns:hover{
     color: var(--container_color);
     background-color: var(--object_color);
 }
