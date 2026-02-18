@@ -116,6 +116,7 @@ a:hover{
 
 button{
     height: fit-content;
+    align-content: center;
     /* text-decoration: none; */
     border: 0;
     padding: 8px;
@@ -224,7 +225,7 @@ pre{
     @media (orientation: portrait) {
         grid-template-rows: auto auto;
         width: calc(100% - (2px));
-        max-height: auto;
+        max-height: 100%;
         height: 100%;
         position: initial;
     }
@@ -320,7 +321,7 @@ pre{
     /*height: 400px;*/
     /*display: flex;*/
     max-width: 100%;
-    max-height: 100%;
+    max-height: calc(100% - 56px);
     /* max-height: 80%; */
     padding: 0;
     margin: 0;
@@ -365,7 +366,7 @@ pre{
 
 .contacts{
     display: grid;
-    grid-template-columns: 3.5dvw 3.5dvw;
+    grid-template-columns: 3.5rem 3.5rem;
     gap: 1dvh;
     /*height: fit-content;*/
     width: 100%;
