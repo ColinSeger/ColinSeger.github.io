@@ -14,3 +14,7 @@ raises the frame rate cap by 10.
 - Graphics Settings
 - Sang Part Of Main Theme
 - Made The LODS
+
+#### Grafics Settings
+
+Since this was the first thing we ever did in Unreal Engine we had to figure out alot of things and

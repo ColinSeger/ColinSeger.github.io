@@ -34,3 +34,7 @@ how to use the things Vulkan provides in a competent way. But I will also say th
 #### Shadow Mapping
 This was by far the thing I had the hardest time with, this came down to my inexperience in Vulkan and how many systems had to work well together
 or have it come crashing down.
+
+
+#### Entity System
+The entitiy system is very simple being a struct that can contain 8 uint_16 coresponing to... (Ongoing)
