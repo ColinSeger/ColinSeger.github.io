@@ -80,3 +80,6 @@ due to it's multithreaded model our game was not Cpu bottlenecked so we moved to
 needing less instructions for materials.
 
 Another low hanging fruit was LODs, since we where not using Nanite on most models we disabled it and made Lods for the models that needed it the most.
+
+
+This is a work in progress document. More will be added in time

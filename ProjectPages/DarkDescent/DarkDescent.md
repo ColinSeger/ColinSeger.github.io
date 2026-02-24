@@ -267,3 +267,6 @@ public void RemoveLockedSpell(BaseSpells spell){
 }
 </code>
 </pre>
+
+
+This is a work in progress document. More will be added in time
